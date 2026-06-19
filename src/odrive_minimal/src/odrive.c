@@ -21,6 +21,24 @@ int set_node_id(int can_sock, uint8_t node_id, uint64_t serial_num)
 	return 0;
 }
 
+int set_axis_state(int can_sock, uint8_t node_id, uint32_t axis_state)
+{
+	struct can_frame frame;
+	
+	frame.can_id = 0x7;
+	frame.can_id |= (uint32_t)node_id << 5;
+	frame.len = 8;
+
+	memcpy(frame.data, &axis_state, 4);
+
+	if (write_can(can_sock, &frame)) {
+		fprintf(stderr, "write failure in set_axis_state()\n");
+		return 1;
+	}
+
+	return 0;
+}
+
 int set_controller_mode(int can_sock, uint8_t node_id, uint32_t ctrl_mode, uint32_t input_mode)
 {
 	struct can_frame frame;

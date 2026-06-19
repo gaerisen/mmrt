@@ -34,7 +34,7 @@ int init_can(const char *iface_name)
 
 int read_can(int s, struct can_frame *frame)
 {
-	int numbytes;
+	long unsigned int numbytes;
 
 	numbytes = read(s, frame, sizeof(struct can_frame));
 
@@ -52,7 +52,7 @@ int read_can(int s, struct can_frame *frame)
 }
 
 int write_can(int s, struct can_frame *frame) {
-	int numbytes;
+	long unsigned int numbytes;
 
 	numbytes = write(s, frame, sizeof(struct can_frame));
 
