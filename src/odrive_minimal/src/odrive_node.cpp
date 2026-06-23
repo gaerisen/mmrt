@@ -40,6 +40,14 @@ public:
 					"motor_vel", 10, topic_callback);
 	}
 
+	~ODriveSubscriber()
+	{
+		RCLCPP_INFO(	this->get_logger(),
+				"Reached destructor\n");
+		set_axis_state(sock_, 42, 1);
+		set_controller_mode(sock_, 42, 0, 0);
+	}
+
 private:
 	rclcpp::Subscription<std_msgs::msg::Float32>::SharedPtr subscription_;
 	int sock_;
