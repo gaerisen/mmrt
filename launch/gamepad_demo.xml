@@ -1,0 +1,10 @@
+<launch>
+    <node pkg="odrive_can" exec="odrive_can_node" name="can_node" namespace="odrive_axis0">
+        <param name="node_id" value="0" />
+        <param name="interface" value="can0" />
+    </node>
+
+    <node pkg="joy_linux" exec="joy_linux_node" name="joy_node" namespace="joy0" />
+
+    <node pkg="joy_to_odrive" exec="joy_to_odrive" name="joy_odrive_ctl_node" namespace="joy_odrive_ctl" />
+</launch>
