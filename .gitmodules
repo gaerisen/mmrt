@@ -1,6 +1,6 @@
 [submodule "src/ros_odrive"]
 	path = src/ros_odrive
-	url = git@github.com:gaerisen/ros_odrive
+	url = https://github.com/odriverobotics/ros_odrive.git
 [submodule "joystick_drivers"]
 	path = src/joystick_drivers
 	url = https://github.com/ros-drivers/joystick_drivers.git
