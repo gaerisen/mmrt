@@ -1,0 +1,38 @@
+{
+  "name": "ROS 2 Jazzy on Ubuntu 24.04",
+
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+
+  "remoteUser": "vscode",
+  "containerUser": "vscode",
+
+  "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+
+  "init": true,
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "ms-iot.vscode-ros",
+        "ms-vscode.cpptools",
+        "ms-python.python",
+        "twxs.cmake",
+        "ms-vscode.cmake-tools"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "python.defaultInterpreterPath": "/usr/bin/python3",
+        "cmake.configureOnOpen": false
+      }
+    }
+  },
+
+  "postCreateCommand": "rosdep update --rosdistro jazzy",
+
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {}
+  }
+}
