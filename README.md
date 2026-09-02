@@ -40,7 +40,7 @@ $ git submodule update
 
 Then install the necessary dependencies:
 
-`$ rosdep install --from-paths src/`
+`$ rosdep install -r --from-paths src/`
 
 The joystick demo node relies on the ODrive motor driver, so build that first:
 
