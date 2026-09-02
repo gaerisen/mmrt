@@ -30,8 +30,6 @@
     }
   },
 
-  "postCreateCommand": "rosdep update --rosdistro jazzy",
-
   "features": {
     "ghcr.io/devcontainers/features/git:1": {}
   }
