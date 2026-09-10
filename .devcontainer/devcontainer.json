@@ -11,6 +11,8 @@
 
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
+  "runArgs": ["--network=host"],
+
   "init": true,
 
   "customizations": {
