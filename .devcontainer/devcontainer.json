@@ -11,9 +11,21 @@
 
   "workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
 
-  "runArgs": ["--network=host"],
-
   "init": true,
+
+  "runArgs": [
+    "--network=host"
+  ],
+
+  "mounts": [
+    "source=/var/run/docker.sock,target=/run/docker.sock,type=bind",
+    "type=bind,source=${env:HOME}/.Xauthority,target=/home/vscode/.Xauthority",
+    "type=bind,source=/tmp/.X11-unix,target=/tmp/.X11-unix"
+  ],
+
+  "remoteEnv": {
+    "DISPLAY": "${localEnv:DISPLAY}"
+  },
 
   "customizations": {
     "vscode": {
@@ -33,6 +45,7 @@
   },
 
   "features": {
-    "ghcr.io/devcontainers/features/git:1": {}
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/althack/devcontainers/linux-x11-forwarding:0.4.0": {}
   }
 }

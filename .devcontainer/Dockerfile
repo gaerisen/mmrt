@@ -19,6 +19,11 @@ RUN apt-get update \
         gdb \
         python3-pip \
         python3-venv \
+        libx11-6 \
+        libxext6 \
+        libxrender1 \
+        libxtst6 \
+        libxi6 \
     && locale-gen en_US en_US.UTF-8 \
     && update-locale LANG=en_US.UTF-8 LC_ALL=en_US.UTF-8 \
     && add-apt-repository universe \
