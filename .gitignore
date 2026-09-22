@@ -3,3 +3,6 @@ install/
 log/
 .ccls-cache/
 .vscode/
+.cache/
+compile_commands.json
+__pycache__/
