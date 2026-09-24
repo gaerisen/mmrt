@@ -26,6 +26,7 @@ endif()
 
 rosidl_generate_interfaces(${PROJECT_NAME}
 	"msg/HandGesture.msg"
+	"srv/HandGesture.srv"
 )
 
 ament_package()
