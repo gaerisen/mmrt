@@ -27,7 +27,11 @@ def generate_launch_description():
                     'mvsim_tutorial',
                     'demo_elevation_map.launch.py'
                 ])
-            ])
+            ]),
+            launch_arguments={
+                'use_rviz': 'True',
+                'headless': 'False'
+            }.items()
         ),
         IncludeLaunchDescription(
             PythonLaunchDescriptionSource([
@@ -38,7 +42,23 @@ def generate_launch_description():
                 ])
             ]),
             launch_arguments={
-                'map': 'demo_map.yaml'
+                'map': 'demo_map.yaml',
+                'use_sim_time': 'True',
+                'params_file': 'nav2_params.yaml'
+            }.items()
+        ),
+        IncludeLaunchDescription(
+            PythonLaunchDescriptionSource([
+                PathJoinSubstitution([
+                    FindPackageShare('nav2_bringup'),
+                    'launch',
+                    'rviz_launch.py'
+                ])
+            ]),
+            launch_arguments={
+                'map': 'demo_map.yaml',
+                'use_sim_time': 'True',
+                'params_file': 'nav2_params.yaml'
             }.items()
         )
     ])
