@@ -1,0 +1,7 @@
+# Request components
+int32 a
+int32 b
+---
+# Response components
+int32 quotient
+int32 remainder
