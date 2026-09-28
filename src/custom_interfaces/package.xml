@@ -4,11 +4,10 @@
   <name>custom_interfaces</name>
   <version>0.0.0</version>
   <description>TODO: Package description</description>
-  <maintainer email="garrison.m.taylor@gmail.com">garrison</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="garrison.m.taylor@gmail.com">Garrison Taylor</maintainer>
+  <license>MIT</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
-
   <exec_depend>rosidl_default_runtime</exec_depend>
   <member_of_group>rosidl_interface_packages</member_of_group>
 
