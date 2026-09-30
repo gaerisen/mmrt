@@ -3,7 +3,7 @@ from enum import Enum
 
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import String, Float32
+from std_msgs.msg import String, Float32, Bool
 
 class Status(Enum):
     INIT = 0
@@ -37,12 +37,12 @@ class Nav_State_Machine(Node):
             'obstacle_importance',
             self.listener_callback_obstacle_importance,
             10)
-        self.distance_from_goal = self.create_subscription(
+        self.distance_from_goal_sub = self.create_subscription(
             Float32,
             'distance_from_goal',
             self.listener_callback_distance_from_goal,
             10)
-        self.marker_detection = self.create_subscription(
+        self.marker_detection_sub = self.create_subscription(
             bool,
             'marker_detection',
             self.listener_callback_marker_detection,
@@ -93,6 +93,21 @@ class Nav_State_Machine(Node):
     def listener_callback_marker_detection(self, msg):
         self.get_logger().info('Marker_detection: "%b"' % msg.data)
         self.marker_detection = msg.data
+
+
+def main(args=None):
+    rclpy.init(args=args)
+
+    fsm = Nav_State_Machine()
+    fsm.get_logger().info('Marker_detection: "%b"' % fsm.confidence)
+    print (fsm.confidence)
+    rclpy.spin(fsm)
+
+    rclpy.shutdown()
+
+
+if __name__ == '__main__':
+    main()
 
     # def control_loop(self):
     #     """Called at 5 Hz. Dispatches to the handler for the current state."""

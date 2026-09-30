@@ -23,7 +23,9 @@ setup(
         ],
     },
     entry_points={
-        'console_scripts': [                         
+         'console_scripts': [
+                'Nav_State_Machine = fsm.nav_state_machine:main',
+                
         ],
-    },
+},
 )
