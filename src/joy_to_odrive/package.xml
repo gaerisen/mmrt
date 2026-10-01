@@ -13,6 +13,7 @@
   <depend>rclcpp</depend>
   <depend>sensor_msgs</depend>
   <depend>odrive_ros2_interfaces</depend>
+  <depend>odrive_can</depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
