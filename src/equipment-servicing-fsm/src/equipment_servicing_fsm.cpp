@@ -36,7 +36,7 @@ class EquipmentServicingFSM : public rclcpp::Node {
     public:
     EquipmentServicingFSM() : Node("equipment_servicing_fsm"), state_(State::IDLE) 
     {
-        subscription_ = create_subscription<FSMEvent>(
+        subscriber_ = create_subscription<FSMEvent>(
             "fsm_events", 10,
             std::bind(&MissionFSM::on_event, this, std::placeholders::_1));
 
