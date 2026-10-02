@@ -30,6 +30,7 @@ State next(State s)
         case State::MOVING: return State::BLOCKED;
         case State::BLOCKED: return State::IDLE;
     }
+    return s;
 }
 
 class EquipmentServicingFSM : public rclcpp::Node {
@@ -38,9 +39,9 @@ class EquipmentServicingFSM : public rclcpp::Node {
     {
         subscriber_ = create_subscription<FSMEvent>(
             "fsm_events", 10,
-            std::bind(&MissionFSM::on_event, this, std::placeholders::_1));
+            std::bind(&EquipmentServicingFSM::on_event, this, std::placeholders::_1));
 
-        publisher_ create_publisher<std_msg::String>("mission_state", 10);
+        publisher_ = create_publisher<std_msgs::msg::String>("equipment_servicing_state", 10);
     }
 
     private:
@@ -53,9 +54,6 @@ class EquipmentServicingFSM : public rclcpp::Node {
                 {
                     transition(next(state_));
                 }
-                break;
-            case State:DONE:
-            case State::FAILED:
                 break;
             default:
                 if (msg->source != to_string(state_)) 
@@ -70,7 +68,7 @@ class EquipmentServicingFSM : public rclcpp::Node {
                 }
                 else if (msg->event == FSMEvent::FAILURE)
                 {
-                    transition(State::FAILED);
+                    transition(State::IDLE);
                 }
                 break;
         }
