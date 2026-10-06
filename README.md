@@ -6,8 +6,8 @@ ROS2 packages for MMRTs 2026 rover
 
 This repo relies on ROS2 Jazzy Jalisco being installed. If you are on Ubuntu
 24.04, follow the installation instructions for Jazzy
-[here](https://docs.ros.org/en/jazzy/index.html), then continue with
-[First Build]. If not, read on starting with [Dev Container Setup]
+[here](https://docs.ros.org/en/jazzy/index.html), then continue with First
+Build. If not, read on starting with Dev Container Setup.
 
 ### Dev Container Setup
 
@@ -31,29 +31,27 @@ $ rosdep update
 
 ### First Build
 
-First, initialize and pull submodules:
+Some packages depend on submodules that rosdep can't find on its own. First,
+initialize and pull those submodules:
 
 ```
 $ git submodule init
 $ git submodule update
 ```
 
-Then install the necessary dependencies:
+Then install all the dependencies rosdep *can* find:
 
 `$ rosdep install -r --from-paths src/`
 
-The joystick demo node relies on the ODrive motor driver, so build that first:
-
-```
-$ colcon build --packages-select odrive_can
-$ source ./install/local_setup.bash     # Adds freshly built modules to the
-                                        # environment. You'll typically do this
-                                        # after every build.
-```
-
-Then build the rest of the packages:
+Then try your first build:
 
 ```
 $ colcon build
+```
+
+You'll need to source the workspace's environment to let ROS2 see your
+executables and launch files:
+
+```
 $ source ./install/local_setup.bash
 ```
