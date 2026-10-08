@@ -47,7 +47,17 @@ class Nav_State_Machine(Node):
             'marker_detection',
             self.listener_callback_marker_detection,
             10)
+        self.state_publisher = self.create_publisher(
+            String,
+            'nav_state', 
+            10)
+        
         self.state = Status.INIT
+
+    def brodcast_state(self):
+        msg = String()
+        msg.data = self.state.name
+        self.state_publisher.publish(msg)
 
     def evaluate_state(self):
         if self.state == Status.INIT:
@@ -77,22 +87,25 @@ class Nav_State_Machine(Node):
         self.get_logger().info('Confidence: "%f"' % msg.data)
         self.confidence = msg.data
         self.evaluate_state()
-
-        
+        self.brodcast_state()
 
     def listener_callback_obstacle_importance(self, msg):
         self.get_logger().info('Obstacle_importance: "%f"' % msg.data)
         self.obstacle_importance = msg.data
         self.evaluate_state()
+        self.brodcast_state()
 
     def listener_callback_distance_from_goal(self, msg):
         self.get_logger().info('Distance_from_goal: "%f"' % msg.data)
         self.distance_from_goal = msg.data
         self.evaluate_state()
+        self.brodcast_state()
 
     def listener_callback_marker_detection(self, msg):
         self.get_logger().info('Marker_detection: "%b"' % msg.data)
         self.marker_detection = msg.data
+        self.evaluate_state()
+        self.brodcast_state()
 
 
 def main(args=None):
