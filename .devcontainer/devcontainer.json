@@ -13,13 +13,7 @@
 
   "init": true,
 
-  "runArgs": [
-    "--network=host"
-  ],
-
-  "mounts": [
-    "source=/var/run/docker.sock,target=/run/docker.sock,type=bind"
-  ],
+  "postCreateCommand": "rosdep update",
 
   "customizations": {
     "vscode": {
@@ -36,9 +30,5 @@
         "cmake.configureOnOpen": false
       }
     }
-  },
-
-  "features": {
-    "ghcr.io/devcontainers/features/git:1": {}
   }
 }
