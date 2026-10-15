@@ -25,7 +25,8 @@ def generate_launch_description():
             ]),
             launch_arguments={
                 'use_rviz': 'True',
-                'headless': 'False'
+                'headless': 'False',
+                'do_fake_localization': 'False'
             }.items()
         ),
         IncludeLaunchDescription(
