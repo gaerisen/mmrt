@@ -62,7 +62,7 @@ def generate_launch_description():
             executable='pointcloud_to_laserscan_node',
             remappings=[(
                     'cloud_in',
-                    '/camera1_points'
+                    '/lidar1_points'
                  ),
                  (
                     'scan',
@@ -70,9 +70,9 @@ def generate_launch_description():
                  )
             ],
             parameters=[{
-                'target_frame': 'camera1_points',
+                'target_frame': 'lidar1_points',
                 'transform_tolerance': 0.01,
-                'min_height': 0.0,
+                'min_height': 0.2,
                 'max_height': 1.0,
                 'angle_min': -1.5708,  # -M_PI/2
                 'angle_max': 1.5708,  # M_PI/2
