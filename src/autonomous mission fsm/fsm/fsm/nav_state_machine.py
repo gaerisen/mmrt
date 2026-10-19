@@ -1,6 +1,4 @@
-
 from enum import Enum
-
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
@@ -13,126 +11,116 @@ class Status(Enum):
     MISSION_COMPLETE = 4
     STOP = 5
     FAULT = 6
-    #SEARCH_FOR_MARKER = 7
 
-class Nav_State_Machine(Node):
-
-    
-
-
+class NavStateMachine(Node):
     def __init__(self):
-        super().__init__('Nav_State_Machine')
-        self.confidence = 0
-        self.obstacle_importance = 0
-        self.distance_from_goal = 100
+        super().__init__('nav_state_machine')
+        self.confidence = 0.0
+        self.obstacle_importance = 0.0
+        self.distance_from_goal = 100.0
         self.marker_detection = False
+        self.state = Status.INIT
 
+        # Subscriptions
         self.confidence_sub = self.create_subscription(
             Float32,
             'confidence',
             self.listener_callback_confidence,
-            10)
+            10
+        )
         self.obstacle_importance_sub = self.create_subscription(
             Float32,
             'obstacle_importance',
             self.listener_callback_obstacle_importance,
-            10)
+            10
+        )
         self.distance_from_goal_sub = self.create_subscription(
             Float32,
             'distance_from_goal',
             self.listener_callback_distance_from_goal,
-            10)
+            10
+        )
         self.marker_detection_sub = self.create_subscription(
-            bool,
+            Bool,
             'marker_detection',
             self.listener_callback_marker_detection,
-            10)
+            10
+        )
+
+        # Publisher
         self.state_publisher = self.create_publisher(
             String,
-            'nav_state', 
-            10)
-        
-        self.state = Status.INIT
+            'nav_state',
+            10
+        )
 
-    def brodcast_state(self):
+        self.broadcast_state()
+        self.get_logger().info('Nav State Machine Node Initialized.')
+
+    def broadcast_state(self):
         msg = String()
         msg.data = self.state.name
         self.state_publisher.publish(msg)
 
     def evaluate_state(self):
+        previous_state = self.state
+
         if self.state == Status.INIT:
             if self.confidence > 0.5:
                 self.state = Status.NAVAGATING
+
         elif self.state == Status.NAVAGATING:
             if self.obstacle_importance > 0.5:
                 self.state = Status.OBSTACLE_AVOIDANCE
             elif self.distance_from_goal < 15.0:
                 self.state = Status.SEARCH_FOR_MARKER
+
         elif self.state == Status.OBSTACLE_AVOIDANCE:
             if self.obstacle_importance < 0.5:
                 self.state = Status.NAVAGATING
+
         elif self.state == Status.SEARCH_FOR_MARKER:
-            if self.marker_detection == True:
+            if self.marker_detection:
                 self.state = Status.MISSION_COMPLETE
-            else:
-                pass
-        elif self.state == Status.MISSION_COMPLETE:
-            pass
-        elif self.state == Status.STOP:
-            pass
-        elif self.state == Status.FAULT:
+
+        elif self.state in (Status.MISSION_COMPLETE, Status.STOP, Status.FAULT):
             pass
 
-    def listener_callback_confidence(self, msg):
-        self.get_logger().info('Confidence: "%f"' % msg.data)
-        self.confidence = msg.data
-        self.evaluate_state()
-        self.brodcast_state()
+        if self.state != previous_state:
+            self.get_logger().info(f'State Changed: {previous_state.name} -> {self.state.name}')
 
-    def listener_callback_obstacle_importance(self, msg):
-        self.get_logger().info('Obstacle_importance: "%f"' % msg.data)
-        self.obstacle_importance = msg.data
+    def listener_callback_confidence(self, msg: Float32):
+        self.confidence = float(msg.data)
         self.evaluate_state()
-        self.brodcast_state()
+        self.broadcast_state()
 
-    def listener_callback_distance_from_goal(self, msg):
-        self.get_logger().info('Distance_from_goal: "%f"' % msg.data)
-        self.distance_from_goal = msg.data
+    def listener_callback_obstacle_importance(self, msg: Float32):
+        self.obstacle_importance = float(msg.data)
         self.evaluate_state()
-        self.brodcast_state()
+        self.broadcast_state()
 
-    def listener_callback_marker_detection(self, msg):
-        self.get_logger().info('Marker_detection: "%b"' % msg.data)
-        self.marker_detection = msg.data
+    def listener_callback_distance_from_goal(self, msg: Float32):
+        self.distance_from_goal = float(msg.data)
         self.evaluate_state()
-        self.brodcast_state()
+        self.broadcast_state()
+
+    def listener_callback_marker_detection(self, msg: Bool):
+        self.marker_detection = bool(msg.data)
+        self.evaluate_state()
+        self.broadcast_state()
 
 
 def main(args=None):
     rclpy.init(args=args)
-
-    fsm = Nav_State_Machine()
-    fsm.get_logger().info('Marker_detection: "%b"' % fsm.confidence)
-    print (fsm.confidence)
-    rclpy.spin(fsm)
-
-    rclpy.shutdown()
+    fsm = NavStateMachine()
+    try:
+        rclpy.spin(fsm)
+    except KeyboardInterrupt:
+        pass
+    finally:
+        fsm.destroy_node()
+        rclpy.shutdown()
 
 
 if __name__ == '__main__':
     main()
-
-    # def control_loop(self):
-    #     """Called at 5 Hz. Dispatches to the handler for the current state."""
-    #     self.publish_state()
- 
-    #     handlers = {
-    #         Status.INIT: self.do_init,
-    #         Status.NAVIGATE_TO_WAYPOINT: self.do_navigate,
-    #         Status.OBSTACLE_AVOIDANCE: self.do_obstacle_avoidance,
-    #         Status.SEARCH_FOR_MARKER: self.do_search_for_marker,
-    #         Status.APPROACH_MARKER: self.do_approach_marker,
-    #         Status.MISSION_COMPLETE: self.do_mission_complete,
-    #         Status.FAULT: self.do_fault,
-    #     }
-    #     handlers[self.state]()

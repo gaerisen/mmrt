@@ -23,10 +23,9 @@ setup(
         ],
     },
     entry_points={
-         'console_scripts': [
-                'Nav_State_Machine = fsm.nav_state_machine:main',
-                'State_Machine_UI = fsm.state_machine_ui:main'
-                
-        ],
-},
+            'console_scripts': [
+                'nav_state_machine = fsm.nav_state_machine:main',
+                'mock_nav_feed = fsm.mock_nav_feed:main',
+            ],
+    },
 )
