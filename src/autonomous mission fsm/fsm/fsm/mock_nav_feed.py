@@ -1,77 +1,116 @@
-import time
+from builtins import KeyboardInterrupt
+from random import random
+
 import rclpy
 from rclpy.node import Node
-from std_msgs.msg import Float32, Bool
+
+from std_msgs.msg import Bool, Float32, String
+
 
 class MockNavFeed(Node):
     def __init__(self):
         super().__init__('mock_nav_feed')
-        self.pub_conf = self.create_publisher(Float32, 'confidence', 10)
-        self.pub_obs = self.create_publisher(Float32, 'obstacle_importance', 10)
-        self.pub_dist = self.create_publisher(Float32, 'distance_from_goal', 10)
-        self.pub_marker = self.create_publisher(Bool, 'marker_detection', 10)
+        self.pub_conf = self.create_publisher(
+            Float32, 'confidence', 10)
+        self.pub_obs = self.create_publisher(
+            Float32, 'obstacle_importance', 10)
+        self.pub_dist = self.create_publisher(
+            Float32, 'distance_from_goal', 10)
+        self.pub_marker = self.create_publisher(
+            Bool, 'marker_detection', 10)
+        self.state_sub = self.create_subscription(
+            String,
+            'nav_state',
+            self.state_callback,
+            10)
 
-        self.timer = self.create_timer(0.2, self.step_scenario)
-        self.start_time = time.time()
+        self.current_state = 'INIT'
+        self.confidence = 0.0
+        self.obstacle_importance = 0.0
+        self.distance_from_goal = 100.0
+        self.marker_detection = False
+        self.timer = self.create_timer(1, self.step_scenario)
         self.get_logger().info('Mock Telemetry Feed Initialized.')
 
+    def state_callback(self, msg: String):
+        self.current_state = msg.data
+
     def step_scenario(self):
-        # 30-second repeating mission run
-        elapsed = (time.time() - self.start_time) % 30.0
+        if self.current_state == 'INIT':
+            self.confidence = min(
+                self.confidence + 0.06 + random() * 0.06,
+                1.0)
+            self.obstacle_importance = 0.0
+            self.distance_from_goal = 100.0
+            self.marker_detection = False
+        elif self.current_state == 'NAVAGATING':
+            if random() < 0.015:
+                self.confidence = max(
+                    self.confidence - (0.2 + random() * 0.35),
+                    0.0)
+            else:
+                self.confidence += (
+                    (0.98 - self.confidence) * (0.02 + random() * 0.06))
 
-        c = Float32()
-        o = Float32()
-        d = Float32()
-        m = Bool()
+            self.distance_from_goal = max(
+                self.distance_from_goal - (0.5 + random() * 0.8),
+                0.0)
 
-        # 0s - 4s: INIT (Confidence increases past threshold 0.5)
-        if elapsed < 4.0:
-            c.data = float(elapsed / 4.0)
-            o.data = 0.05
-            d.data = 100.0
-            m.data = False
+            if random() < 0.035:
+                self.obstacle_importance = 0.7 + random() * 0.25
+            else:
+                self.obstacle_importance = max(
+                    self.obstacle_importance - (0.005 + random() * 0.02),
+                    0.05)
+        elif self.current_state == 'OBSTACLE_AVOIDANCE':
+            if random() < 0.04:
+                self.confidence = max(
+                    self.confidence - (0.1 + random() * 0.2),
+                    0.0)
+            else:
+                self.confidence = max(
+                    self.confidence - random() * 0.025,
+                    0.0)
+            self.obstacle_importance = max(
+                self.obstacle_importance - (0.02 + random() * 0.025),
+                0.0)
+            self.distance_from_goal = max(
+                self.distance_from_goal - (0.1 + random() * 0.35),
+                0.0)
+        elif self.current_state == 'SEARCH_FOR_MARKER':
+            self.confidence += (
+                (0.98 - self.confidence) * (0.02 + random() * 0.06))
+            if not self.marker_detection and random() < 0.04:
+                self.marker_detection = True
+        elif self.current_state == 'MISSION_COMPLETE':
+            self.confidence = 1.0
+            self.obstacle_importance = 0.0
+            self.distance_from_goal = 0.0
+            self.marker_detection = True
+        elif self.current_state == 'STOP':
+            self.confidence = min(
+                self.confidence + 0.025 + random() * 0.04,
+                1.0)
+        elif self.current_state == 'FAULT':
+            self.confidence = max(
+                self.confidence - (0.02 + random() * 0.08),
+                0.0)
+            self.obstacle_importance = max(self.obstacle_importance, 0.85)
 
-        # 4s - 10s: NAVAGATING (Rover drives toward destination)
-        elif elapsed < 10.0:
-            c.data = 0.95
-            o.data = 0.10
-            progress = (elapsed - 4.0) / 6.0
-            d.data = 100.0 - (progress * 55.0)  # 100m down to 45m
-            m.data = False
+        confidence_msg = Float32()
+        confidence_msg.data = float(self.confidence)
+        obstacle_msg = Float32()
+        obstacle_msg.data = float(self.obstacle_importance)
+        distance_msg = Float32()
+        distance_msg.data = float(self.distance_from_goal)
+        marker_msg = Bool()
+        marker_msg.data = self.marker_detection
 
-        # 10s - 15s: OBSTACLE_AVOIDANCE (Obstacle importance spikes > 0.5)
-        elif elapsed < 15.0:
-            c.data = 0.90
-            o.data = 0.85
-            d.data = 45.0
-            m.data = False
+        self.pub_conf.publish(confidence_msg)
+        self.pub_obs.publish(obstacle_msg)
+        self.pub_dist.publish(distance_msg)
+        self.pub_marker.publish(marker_msg)
 
-        # 15s - 20s: NAVAGATING (Obstacle clears, distance drops below 15m)
-        elif elapsed < 20.0:
-            c.data = 0.95
-            o.data = 0.15
-            progress = (elapsed - 15.0) / 5.0
-            d.data = 45.0 - (progress * 33.0)  # 45m down to 12m
-            m.data = False
-
-        # 20s - 24s: SEARCH_FOR_MARKER (Rover searches in marker zone)
-        elif elapsed < 24.0:
-            c.data = 0.98
-            o.data = 0.05
-            d.data = 10.0
-            m.data = False
-
-        # 24s - 30s: MISSION_COMPLETE (Marker detected)
-        else:
-            c.data = 1.0
-            o.data = 0.0
-            d.data = 2.0
-            m.data = True
-
-        self.pub_conf.publish(c)
-        self.pub_obs.publish(o)
-        self.pub_dist.publish(d)
-        self.pub_marker.publish(m)
 
 def main(args=None):
     rclpy.init(args=args)
@@ -83,6 +122,7 @@ def main(args=None):
     finally:
         node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

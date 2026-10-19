@@ -64,25 +64,30 @@ class NavStateMachine(Node):
 
     def evaluate_state(self):
         previous_state = self.state
-
+        
         if self.state == Status.INIT:
             if self.confidence > 0.5:
                 self.state = Status.NAVAGATING
 
         elif self.state == Status.NAVAGATING:
+            if self.confidence < .65:
+                self.state = Status.STOP
             if self.obstacle_importance > 0.5:
                 self.state = Status.OBSTACLE_AVOIDANCE
             elif self.distance_from_goal < 15.0:
                 self.state = Status.SEARCH_FOR_MARKER
+                
 
         elif self.state == Status.OBSTACLE_AVOIDANCE:
             if self.obstacle_importance < 0.5:
                 self.state = Status.NAVAGATING
-
+        elif self.state == Status.STOP:
+            if self.confidence > .85: 
+                self.state = Status.NAVAGATING
         elif self.state == Status.SEARCH_FOR_MARKER:
             if self.marker_detection:
                 self.state = Status.MISSION_COMPLETE
-
+        
         elif self.state in (Status.MISSION_COMPLETE, Status.STOP, Status.FAULT):
             pass
 
