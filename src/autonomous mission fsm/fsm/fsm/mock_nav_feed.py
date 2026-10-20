@@ -18,11 +18,18 @@ class MockNavFeed(Node):
             Float32, 'distance_from_goal', 10)
         self.pub_marker = self.create_publisher(
             Bool, 'marker_detection', 10)
+
+        self.confidence_sub = self.create_subscription(
+            Float32,'confidence',self.listener_callback_confidence,10)
+        self.obstacle_importance_sub = self.create_subscription(
+            Float32, 'obstacle_importance', self.listener_callback_obstacle_importance,10)
+        self.distance_from_goal_sub = self.create_subscription(
+            Float32, 'distance_from_goal', self.listener_callback_distance_from_goal, 10)
+        self.marker_detection_sub = self.create_subscription(
+            Bool, 'marker_detection', self.listener_callback_marker_detection, 10)
         self.state_sub = self.create_subscription(
-            String,
-            'nav_state',
-            self.state_callback,
-            10)
+            String, 'nav_state',  self.state_callback, 10)
+        
 
         self.current_state = 'INIT'
         self.confidence = 0.0
@@ -31,7 +38,17 @@ class MockNavFeed(Node):
         self.marker_detection = False
         self.timer = self.create_timer(1, self.step_scenario)
         self.get_logger().info('Mock Telemetry Feed Initialized.')
+    def listener_callback_confidence(self, msg: Float32):
+        self.confidence = float(msg.data)
 
+    def listener_callback_obstacle_importance(self, msg: Float32):
+        self.obstacle_importance = float(msg.data)
+
+    def listener_callback_distance_from_goal(self, msg: Float32):
+        self.distance_from_goal = float(msg.data)
+
+    def listener_callback_marker_detection(self, msg: Bool):
+        self.marker_detection = bool(msg.data)    
     def state_callback(self, msg: String):
         self.current_state = msg.data
 

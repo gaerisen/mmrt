@@ -1,85 +1,62 @@
 from random import Random
-
-from ursina import Ursina, Slider, Entity, camera, color
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
 
-app = Ursina()
-def update_confidence():
-    print("confidence_slider value: ", confidence_slider.value)
-    
-def obstacle_importance():
-    print("obstacle_importance_slider value: ", obstacle_importance_slider.value)
-    
-def update_distance_from_goal():
-    print("distance_from_goal_slider value: ", distance_from_goal_slider.value)
-
-
-def update_state():
-    pass
-controls_box = Entity(parent=camera.ui, position = (0,-.3,0),model='quad', scale=(.7, .24), color=color.gray)
-slider_scale = (1 / .7, 1 / .24, 1)
-confidence_slider = Slider(parent=controls_box, position=(-.4, .28, -.01), scale=slider_scale, min=0, max=100, on_value_changed=update_confidence, dynamic=True)
-obstacle_importance_slider = Slider(parent=controls_box, position=(-.4, 0, -.01), scale=slider_scale, min=0, max=100, on_value_changed=obstacle_importance, dynamic=True)
-distance_from_goal_slider = Slider(parent=controls_box, position=(-.4, -.28, -.01), scale=slider_scale, min=0, max=100, on_value_changed=update_distance_from_goal, dynamic=True)
-
-
-
-app.run()
-
-
-class RoverSim(Entity):
+class RoverUI(Node):
     def __init__(self):
+        super().__init__('rover_sim')
         self.confidence = 0
         self.obstacle_importance = 0
         self.distance_from_goal = 100
         self.marker_detection = False
         self.current_state = "INIT"
         
-        self.confidence_pub = self.create_publisher(
+        self.confidence_sub = self.create_subscription(
             Float32,
             'confidence',
+            self.listener_callback_confidence,
             10)
-        self.obstacle_importance_pub = self.create_publisher(
+        self.obstacle_importance_sub = self.create_subscription(
             Float32,
             'obstacle_importance',
+            self.listener_callback_obstacle_importance,
             10)
-        self.distance_from_goal_pub = self.create_publisher(
+        self.distance_from_goal_sub = self.create_subscription(
             Float32,
             'distance_from_goal',
+            self.listener_callback_distance_from_goal,
             10)
-        self.marker_detection_pub = self.create_publisher(
+        self.marker_detection_sub = self.create_subscription(
             Bool,
             'marker_detection',
+            self.listener_callback_marker_detection,
             10)
         self.state_sub = self.create_subscription(
             String,
             'nav_state', 
             self.reported_state,
             10)
+
+    def listener_callback_confidence(self, msg: Float32):
+        self.confidence = float(msg.data)
+
+    def listener_callback_obstacle_importance(self, msg: Float32):
+        self.obstacle_importance = float(msg.data)
+
+    def listener_callback_distance_from_goal(self, msg: Float32):
+        self.distance_from_goal = float(msg.data)
+
+    def listener_callback_marker_detection(self, msg: Bool):
+        self.marker_detection = bool(msg.data)
+
     def reported_state(self, msg):
         self.current_state = msg.data
 
     #In practice, this function should be called in pieces. Just for easierness purposes, I will call it in one function.
     #The states might end up jittering between each other with each update because of this.
-    def update(self):
-        msg_confidence = Float32()
-        msg_confidence.data = confidence_slider.value
-        self.confidence_pub.publish(msg_confidence)
-
-        msg_obstacle_importance = Float32()
-        msg_obstacle_importance.data = obstacle_importance_slider.value
-        self.obstacle_importance_pub.publish(msg_obstacle_importance)
-
-        msg_distance_from_goal = Float32()
-        msg_distance_from_goal.data = distance_from_goal_slider.value
-        self.distance_from_goal_pub.publish(msg_distance_from_goal)
-
     def found_marker(self):
-        msg_marker_detection = Bool()
-        msg_marker_detection.data = True
-        self.marker_detection_pub.publish(msg_marker_detection)
+        self.marker_detection = True
 
     
 def main(args=None):
@@ -98,7 +75,6 @@ def main(args=None):
 def simloop(fsm_sim):
     print(fsm_sim.current_state)
     while True:
-        fsm_sim.update()
         match fsm_sim.current_state:
             case "INIT":
                 confidence_slider.value = 0
