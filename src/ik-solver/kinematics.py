@@ -73,6 +73,12 @@ class JointSolution:
         return [self.slide, self.shoulder, self.elbow,
                 self.wrist_pitch, self.wrist_roll]
 
+@dataclass(frozen=True)
+class ClawTipPosition:
+    x: float
+    y: float
+    z: float
+
 
 def wrap_angle(angle: float) -> float:
     """Wrap angle to be within [-pi, pi]."""
@@ -129,3 +135,59 @@ def solve(x: float, y: float, z: float, pitch: float, roll: float, geo: ArmGeome
     shoulder, elbow, wrist_pitch = solve_planar(x, z, pitch, geo, elbow_up)
     wrist_roll = solve_wrist_roll(roll)
     return JointSolution(slide, shoulder, elbow, wrist_pitch, wrist_roll)
+
+# Outputs (JointSolution)
+#   slide        linear slide position
+#   shoulder     angle of link 1 above horizontal
+#   elbow        angle of link 2 relative to link 1 (0 = straight)
+#   wrist_pitch  angle of link 3 relative to link 2
+#   wrist_roll   claw rotation about its pointing axis
+
+#class ClawTipPosition:
+#    x: float
+#    y: float
+#    z: float
+
+def fk_solver(joint_solution: JointSolution, geo: ArmGeometry) -> ClawTipPosition:
+    slide = joint_solution.slide
+    shoulder = joint_solution.shoulder
+    elbow = joint_solution.elbow
+    wrist_pitch = joint_solution.wrist_pitch
+
+    l1_x = geo.l1 * math.cos(shoulder)
+    l1_z = geo.l1 * math.sin(shoulder)
+
+    l2_x = geo.l2 * math.cos(shoulder + elbow)
+    l2_z = geo.l2 * math.sin(shoulder + elbow)
+
+    l3_x = geo.l3 * math.cos(shoulder + elbow + wrist_pitch)
+    l3_z = geo.l3 * math.sin(shoulder + elbow + wrist_pitch)
+
+    lx = l1_x + l2_x + l3_x
+    lz = l1_z + l2_z + l3_z
+
+    x = geo.shoulder_x + lx
+    y = slide
+    z = geo.shoulder_z + lz
+
+    return ClawTipPosition(x=x, y=y, z=z)
+    
+
+def main():
+    # Example usage
+    geo = ArmGeometry(
+        l1=100.0, l2=100.0, l3=100.0,
+        shoulder_x=0.0, shoulder_z=0.0,
+        slide_min=-0.1, slide_max=0.1
+    )
+    try:
+        solution = solve(52.5, -0.1, 87.4527, math.radians(30), math.radians(45), geo)
+        print("Joint Solution:", "\n", "\n".join(f"{name}: {value*180/math.pi:.3f}" for name, value in zip(solution.__dataclass_fields__.keys(), solution.as_list())))
+        tip = fk_solver(solution, geo)
+        print(f"FK: x={tip.x:.6f}, y={tip.y:.6f}, z={tip.z:.6f}")
+    except UnreachableError as e:
+        print("Error:", e)
+
+
+if __name__ == "__main__":
+    main()
