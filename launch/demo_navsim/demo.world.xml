@@ -1,0 +1,77 @@
+<mvsim_world version="1.0">
+	<!-- General simulation options -->
+	<simul_timestep>0</simul_timestep> <!-- Simulation fixed-time interval for numerical integration [seconds] or 0 to autodetermine -->
+	
+	<!-- GUI options -->
+	<gui>
+		<ortho>false</ortho>
+		<show_forces>false</show_forces>  <force_scale>0.01</force_scale>
+		<cam_distance>35</cam_distance>
+		<fov_deg>60</fov_deg>
+		<!-- <follow_vehicle>r1</follow_vehicle> -->
+	</gui>
+
+	<!-- Light parameters -->
+	<lights>
+	</lights>
+
+
+	<!-- ========================
+		   Scenario definition
+	     ======================== -->
+	<element class="occupancy_grid">
+		<!-- File can be an image or an MRPT .gridmap file -->
+		<file>demo_map.png</file>
+		<!-- The rest of params are ignored if file is an MRPT gridmap -->
+		<resolution>0.20</resolution>
+		<!--<show_collisions>true</show_collisions>-->
+		<centerpixel_x>160</centerpixel_x>
+		<centerpixel_y>100</centerpixel_y>
+	</element>
+		
+	<!-- ground grid (for visual reference) -->
+	<!-- <element class="ground_grid"> </element> -->
+	
+	<!-- =============================
+		   Vehicle classes definition 
+	     ============================= -->
+	<include file="/opt/ros/jazzy/share/mvsim/definitions/jackal.vehicle.xml"
+		default_sensors="false"
+		/>
+
+	<!-- ========================
+		   Vehicle(s) definition 
+	     ======================== -->
+	<vehicle class="jackal">
+		<init_pose>0 0 0</init_pose>  <!-- In global coords: x,y, yaw(deg) -->
+
+		<!-- Sensors -->
+		<include file="/opt/ros/jazzy/share/mvsim/definitions/lidar2d.sensor.xml" 
+		sensor_x="0.55" sensor_y="0" sensor_z="0.61" sensor_yaw="0"
+		fov_degrees="360"
+		sensor_nrays="100"
+		sensor_name="laser1"
+		raytrace_3d="false"
+		sensor_publish="true"
+		viz_visibleLines="false"
+		viz_visiblePlane="true"
+		/>
+	</vehicle>
+
+	<block:class name="rock_01">
+		<static>true</static>
+		<shape_from_visual/>
+                <zmin>0.0</zmin> <zmax>2.5</zmax>  <!-- Only count collisions in this height range -->
+                <visual>
+                        <model_uri>https://mrpt.github.io/mvsim-models/rock01.zip/rock01/FallingRock01.dae</model_uri>
+                </visual>
+        </block:class>
+
+	<block class="rock_01">
+		<init_pose3d>-0.1 -4 0 0 0 0</init_pose3d>
+	</block>
+	<block class="rock_01">
+		<init_pose3d>-2.0 -4 0 0 0 0</init_pose3d>
+	</block>
+
+</mvsim_world>

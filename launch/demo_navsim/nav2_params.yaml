@@ -1,9 +1,9 @@
 amcl:
   ros__parameters:
-    set_initial_pose: true
+    set_initial_pose: false
     initial_pose:
-      x: -8.0
-      y: -4.0
+      x: 0.0
+      y: 0.0
       z: 0.0
       yaw: 4.712
     alpha1: 0.2
@@ -15,7 +15,7 @@ amcl:
     beam_skip_distance: 0.5
     beam_skip_error_threshold: 0.9
     beam_skip_threshold: 0.3
-    do_beamskip: false
+    do_beamskip: true
     global_frame_id: "map"
     lambda_short: 0.1
     laser_likelihood_max_dist: 2.0
