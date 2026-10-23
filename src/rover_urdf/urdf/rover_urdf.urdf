@@ -1,0 +1,3710 @@
+<?xml version="1.0"?>
+<robot name="rover_urdf">
+  <link name="c_1_2_hex_bearing_good_real_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_1_2_hex_bearing_good_real_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_1_2_hex_bearing_good_real_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.945594344e-09 2.722914435e-09 -0.0001789151248" rpy="0 0 0" />
+      <mass value="0.00400172" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+  </link>
+  <link name="c_1_2_hex_bearing_good_real_2">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_1_2_hex_bearing_good_real_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_1_2_hex_bearing_good_real_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.945594344e-09 2.722914435e-09 -0.0001789151248" rpy="0 0 0" />
+      <mass value="0.00400172" />
+      <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_1">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_2">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_3">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_4">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_5">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_6">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_7">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_4390N181_Flanged_Ball_Bearing_1_8">
+    <!-- sw2robot appearance="metal/aluminum/satin finish aluminum" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_4390N181_Flanged_Ball_Bearing_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.745160762e-08 2.031133432e-08 -7.85834336e-06" rpy="0 0 0" />
+      <mass value="0.00388115" />
+      <inertia ixx="6.86606e-07" ixy="-1.9356e-22" ixz="1.02881e-23" iyy="6.86606e-07" iyz="-4.65289e-24" izz="1.3373e-06" />
+    </inertial>
+  </link>
+  <link name="c_6384K361_Steel_Ball_Bearing_3_17">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_6384K361_Steel_Ball_Bearing_3_17.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_6384K361_Steel_Ball_Bearing_3_17.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.035375611e-08 1.041391377e-08 -0.0003947616292" rpy="0 0 0" />
+      <mass value="0.00276274" />
+      <inertia ixx="2.17865e-07" ixy="1.60635e-24" ixz="-3.26527e-24" iyy="2.17865e-07" iyz="-4.30868e-24" izz="3.66992e-07" />
+    </inertial>
+  </link>
+  <link name="c_6384K361_Steel_Ball_Bearing_3_18">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_6384K361_Steel_Ball_Bearing_3_17.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_6384K361_Steel_Ball_Bearing_3_17.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.035375611e-08 1.041391377e-08 -0.0003947616292" rpy="0 0 0" />
+      <mass value="0.00276274" />
+      <inertia ixx="2.17865e-07" ixy="1.60635e-24" ixz="-3.26527e-24" iyy="2.17865e-07" iyz="-4.30868e-24" izz="3.66992e-07" />
+    </inertial>
+  </link>
+  <link name="c_91259A500_Alloy_Steel_Shoulder_Screw_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_91259A500_Alloy_Steel_Shoulder_Screw_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_91259A500_Alloy_Steel_Shoulder_Screw_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.031544134e-06 -2.509097007e-07 0.001602799859" rpy="0 0 0" />
+      <mass value="0.00264372" />
+      <inertia ixx="1.51669e-06" ixy="1.39099e-13" ixz="5.6449e-11" iyy="1.51669e-06" iyz="1.17311e-11" izz="1.50748e-08" />
+    </inertial>
+  </link>
+  <link name="c_91259A500_Alloy_Steel_Shoulder_Screw_2">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_91259A500_Alloy_Steel_Shoulder_Screw_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_91259A500_Alloy_Steel_Shoulder_Screw_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.031544134e-06 -2.509097007e-07 0.001602799859" rpy="0 0 0" />
+      <mass value="0.00264372" />
+      <inertia ixx="1.51669e-06" ixy="1.39099e-13" ixz="5.6449e-11" iyy="1.51669e-06" iyz="1.17311e-11" izz="1.50748e-08" />
+    </inertial>
+  </link>
+  <link name="c_9520T16_Clamping_Two_Piece_Shaft_Collar_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-3.604860468e-07 -0.0008371803404 1.989196466e-05" rpy="0 0 0" />
+      <mass value="0.0211834" />
+      <inertia ixx="5.83409e-06" ixy="-2.56645e-10" ixz="-1.66223e-11" iyy="4.98141e-06" iyz="9.62837e-12" izz="9.9995e-06" />
+    </inertial>
+  </link>
+  <link name="c_9520T16_Clamping_Two_Piece_Shaft_Collar_2">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-3.604860468e-07 -0.0008371803404 1.989196466e-05" rpy="0 0 0" />
+      <mass value="0.0211834" />
+      <inertia ixx="5.83409e-06" ixy="-2.56645e-10" ixz="-1.66223e-11" iyy="4.98141e-06" iyz="9.62837e-12" izz="9.9995e-06" />
+    </inertial>
+  </link>
+  <link name="c_9520T16_Clamping_Two_Piece_Shaft_Collar_3">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/c_9520T16_Clamping_Two_Piece_Shaft_Collar_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-3.604860468e-07 -0.0008371803404 1.989196466e-05" rpy="0 0 0" />
+      <mass value="0.0211834" />
+      <inertia ixx="5.83409e-06" ixy="-2.56645e-10" ixz="-1.66223e-11" iyy="4.98141e-06" iyz="9.62837e-12" izz="9.9995e-06" />
+    </inertial>
+  </link>
+  <link name="Bogie_Arm_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 1.227789212e-05" rpy="0 0 0" />
+      <mass value="0.134026" />
+      <inertia ixx="0.000464164" ixy="1.75307e-20" ixz="-2.26564e-19" iyy="0.000530566" iyz="5.5121e-21" izz="0.000130763" />
+    </inertial>
+  </link>
+  <link name="Bogie_Arm_2">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 1.227789212e-05" rpy="0 0 0" />
+      <mass value="0.134026" />
+      <inertia ixx="0.000464164" ixy="1.75307e-20" ixz="-2.26564e-19" iyy="0.000530566" iyz="5.5121e-21" izz="0.000130763" />
+    </inertial>
+  </link>
+  <link name="Bogie_Arm_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 1.227789212e-05" rpy="0 0 0" />
+      <mass value="0.134026" />
+      <inertia ixx="0.000464164" ixy="1.75307e-20" ixz="-2.26564e-19" iyy="0.000530566" iyz="5.5121e-21" izz="0.000130763" />
+    </inertial>
+  </link>
+  <link name="Bogie_Arm_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 1.227789212e-05" rpy="0 0 0" />
+      <mass value="0.134026" />
+      <inertia ixx="0.000464164" ixy="1.75307e-20" ixz="-2.26564e-19" iyy="0.000530566" iyz="5.5121e-21" izz="0.000130763" />
+    </inertial>
+  </link>
+  <link name="Bogie_Connection_Plate_1_0_1">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.697758432e-07 5.842482723e-05 1.012878991e-08" rpy="0 0 0" />
+      <mass value="0.13822" />
+      <inertia ixx="7.70383e-05" ixy="5.87381e-21" ixz="5.405e-21" iyy="0.000629258" iyz="5.33517e-21" izz="0.000706064" />
+    </inertial>
+  </link>
+  <link name="Bogie_Connection_Plate_1_0_2">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.697758432e-07 5.842482723e-05 1.012878991e-08" rpy="0 0 0" />
+      <mass value="0.13822" />
+      <inertia ixx="7.70383e-05" ixy="5.87381e-21" ixz="5.405e-21" iyy="0.000629258" iyz="5.33517e-21" izz="0.000706064" />
+    </inertial>
+  </link>
+  <link name="Bogie_Connection_Plate_1_0_3">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.697758432e-07 5.842482723e-05 1.012878991e-08" rpy="0 0 0" />
+      <mass value="0.13822" />
+      <inertia ixx="7.70383e-05" ixy="5.87381e-21" ixz="5.405e-21" iyy="0.000629258" iyz="5.33517e-21" izz="0.000706064" />
+    </inertial>
+  </link>
+  <link name="Bogie_Connection_Plate_1_0_4">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Connection_Plate_1_0_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.697758432e-07 5.842482723e-05 1.012878991e-08" rpy="0 0 0" />
+      <mass value="0.13822" />
+      <inertia ixx="7.70383e-05" ixy="5.87381e-21" ixz="5.405e-21" iyy="0.000629258" iyz="5.33517e-21" izz="0.000706064" />
+    </inertial>
+  </link>
+  <link name="Bogie_Shaft_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Shaft_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Shaft_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.366334855e-07 4.268454598e-08 -0.0002415501203" rpy="0 0 0" />
+      <mass value="0.0250468" />
+      <inertia ixx="3.19052e-05" ixy="6.16209e-12" ixz="7.92541e-13" iyy="3.19338e-05" iyz="-4.71338e-12" izz="4.88131e-06" />
+    </inertial>
+  </link>
+  <link name="Bogie_Shaft_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Shaft_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Bogie_Shaft_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.366334855e-07 4.268454598e-08 -0.0002415501203" rpy="0 0 0" />
+      <mass value="0.0250468" />
+      <inertia ixx="3.19052e-05" ixy="6.16209e-12" ixz="7.92541e-13" iyy="3.19338e-05" iyz="-4.71338e-12" izz="4.88131e-06" />
+    </inertial>
+  </link>
+  <link name="Long_Rocker_Arm_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Long_Rocker_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Long_Rocker_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 2.839328701e-05" rpy="0 0 0" />
+      <mass value="0.356019" />
+      <inertia ixx="0.00810427" ixy="4.03961e-20" ixz="-7.70972e-20" iyy="0.0082802" iyz="-6.30387e-20" izz="0.000347086" />
+    </inertial>
+  </link>
+  <link name="Long_Rocker_Arm_3">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Long_Rocker_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Long_Rocker_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 2.839328701e-05" rpy="0 0 0" />
+      <mass value="0.356019" />
+      <inertia ixx="0.00810427" ixy="4.03961e-20" ixz="-7.70972e-20" iyy="0.0082802" iyz="-6.30387e-20" izz="0.000347086" />
+    </inertial>
+  </link>
+  <link name="Middle_Wheel_Axle_Connector_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0002421435727 0.0001397854556 0" rpy="0 0 0" />
+      <mass value="0.0328748" />
+      <inertia ixx="2.64852e-05" ixy="1.85133e-05" ixz="2.02117e-23" iyy="4.78625e-05" iyz="6.13212e-23" izz="7.42924e-05" />
+    </inertial>
+  </link>
+  <link name="Middle_Wheel_Axle_Connector_Plate_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0002421435727 0.0001397854556 0" rpy="0 0 0" />
+      <mass value="0.0328748" />
+      <inertia ixx="2.64852e-05" ixy="1.85133e-05" ixz="2.02117e-23" iyy="4.78625e-05" iyz="6.13212e-23" izz="7.42924e-05" />
+    </inertial>
+  </link>
+  <link name="Middle_Wheel_Axle_Connector_Plate_3">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0002421435727 0.0001397854556 0" rpy="0 0 0" />
+      <mass value="0.0328748" />
+      <inertia ixx="2.64852e-05" ixy="1.85133e-05" ixz="2.02117e-23" iyy="4.78625e-05" iyz="6.13212e-23" izz="7.42924e-05" />
+    </inertial>
+  </link>
+  <link name="Middle_Wheel_Axle_Connector_Plate_4">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Middle_Wheel_Axle_Connector_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.0002421435727 0.0001397854556 0" rpy="0 0 0" />
+      <mass value="0.0328748" />
+      <inertia ixx="2.64852e-05" ixy="1.85133e-05" ixz="2.02117e-23" iyy="4.78625e-05" iyz="6.13212e-23" izz="7.42924e-05" />
+    </inertial>
+  </link>
+  <link name="Rocker_Bogie_Bottom_Cover_1">
+    <!-- sw2robot material="Rubber" appearance="rubber/gloss/glossy rubber" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Bottom_Cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Bottom_Cover_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.760481492e-05 0.001606799997 -0.0009877162626" rpy="0 0 0" />
+      <mass value="0.0230773" />
+      <inertia ixx="3.4955e-06" ixy="-7.10328e-08" ixz="-1.65167e-09" iyy="4.79478e-06" iyz="-3.03014e-08" izz="2.8112e-06" />
+    </inertial>
+  </link>
+  <link name="Rocker_Bogie_Bottom_Cover_2">
+    <!-- sw2robot material="Rubber" appearance="rubber/gloss/glossy rubber" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Bottom_Cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Bottom_Cover_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="8.760481492e-05 0.001606799997 -0.0009877162626" rpy="0 0 0" />
+      <mass value="0.0230773" />
+      <inertia ixx="3.4955e-06" ixy="-7.10328e-08" ixz="-1.65167e-09" iyy="4.79478e-06" iyz="-3.03014e-08" izz="2.8112e-06" />
+    </inertial>
+  </link>
+  <link name="Rocker_Bogie_Top_Cover_1">
+    <!-- sw2robot material="Rubber" appearance="rubber/gloss/glossy rubber" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Top_Cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Top_Cover_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0.0006239472612 0.0004102379458" rpy="0 0 0" />
+      <mass value="0.0740396" />
+      <inertia ixx="1.40753e-05" ixy="-9.50069e-22" ixz="-3.73563e-21" iyy="7.99637e-05" iyz="2.72608e-09" izz="7.6227e-05" />
+    </inertial>
+  </link>
+  <link name="Rocker_Bogie_Top_Cover_2">
+    <!-- sw2robot material="Rubber" appearance="rubber/gloss/glossy rubber" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Top_Cover_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Bogie_Top_Cover_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0.0006239472612 0.0004102379458" rpy="0 0 0" />
+      <mass value="0.0740396" />
+      <inertia ixx="1.40753e-05" ixy="-9.50069e-22" ixz="-3.73563e-21" iyy="7.99637e-05" iyz="2.72608e-09" izz="7.6227e-05" />
+    </inertial>
+  </link>
+  <link name="Rocker_Connection_Plate_Cleaned_1">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_Cleaned_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_Cleaned_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.294218431e-07 -0.001242449164 0" rpy="0 0 0" />
+      <mass value="0.199777" />
+      <inertia ixx="0.000134515" ixy="1.07533e-17" ixz="-1.18179e-21" iyy="0.000479429" iyz="-6.83615e-22" izz="0.000612602" />
+    </inertial>
+  </link>
+  <link name="Rocker_Connection_Plate_1_0_2">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_1_0_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_1_0_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.135241287e-05 -0.0001730508834 0" rpy="0 0 0" />
+      <mass value="0.281601" />
+      <inertia ixx="0.00023094" ixy="-5.52898e-05" ixz="-2.10686e-22" iyy="0.00107088" iyz="-2.28092e-21" izz="0.00129992" />
+    </inertial>
+  </link>
+  <link name="Rocker_Connection_Plate_W_LEVER_ARM_2_0_2">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_W_LEVER_ARM_2_0_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_W_LEVER_ARM_2_0_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.492333969e-05 -0.002794663948 2.282612492e-08" rpy="0 0 0" />
+      <mass value="0.255503" />
+      <inertia ixx="0.000507016" ixy="-2.39964e-05" ixz="6.36407e-10" iyy="0.000443969" iyz="7.58649e-11" izz="0.000949268" />
+    </inertial>
+  </link>
+  <link name="Rocker_Connection_Plate_W_LEVER_ARM_2_0_3">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_W_LEVER_ARM_2_0_2.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Connection_Plate_W_LEVER_ARM_2_0_2.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.492333969e-05 -0.002794663948 2.282612492e-08" rpy="0 0 0" />
+      <mass value="0.255503" />
+      <inertia ixx="0.000507016" ixy="-2.39964e-05" ixz="6.36407e-10" iyy="0.000443969" iyz="7.58649e-11" izz="0.000949268" />
+    </inertial>
+  </link>
+  <link name="base_link">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="metal/aluminum/satin finish aluminum" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Pivot_Thru_Shaft_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Pivot_Thru_Shaft_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.417540871e-16 -1.660458609e-24 -9.450116394e-19" rpy="0 0 0" />
+      <mass value="0.572739" />
+      <inertia ixx="0.000117302" ixy="4.53042e-13" ixz="1.70729e-07" iyy="0.0271023" iyz="-2.86631e-18" izz="0.0271023" />
+    </inertial>
+  </link>
+  <link name="Rocker_Shaft_Mount_1">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="color" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Shaft_Mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Shaft_Mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="7.02071007e-06 2.09149377e-06 1.449128781e-06" rpy="0 0 0" />
+      <mass value="0.155484" />
+      <inertia ixx="0.000478025" ixy="3.67544e-09" ixz="-1.74151e-09" iyy="0.000206073" iyz="2.77264e-11" izz="0.000681649" />
+    </inertial>
+  </link>
+  <link name="Rocker_Shaft_Mount_2">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="color" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Shaft_Mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Rocker_Shaft_Mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="7.02071007e-06 2.09149377e-06 1.449128781e-06" rpy="0 0 0" />
+      <mass value="0.155484" />
+      <inertia ixx="0.000478025" ixy="3.67544e-09" ixz="-1.74151e-09" iyy="0.000206073" iyz="2.77264e-11" izz="0.000681649" />
+    </inertial>
+  </link>
+  <link name="Short_Rocker_Aluminum_Insert_Block_1">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="color" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Aluminum_Insert_Block_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Aluminum_Insert_Block_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.79172944e-09 0.0001003009529 -0.0001223899977" rpy="0 0 0" />
+      <mass value="0.156021" />
+      <inertia ixx="0.000164777" ixy="1.84111e-11" ixz="9.73733e-13" iyy="9.63004e-05" iyz="5.57041e-06" izz="8.50403e-05" />
+    </inertial>
+  </link>
+  <link name="Short_Rocker_Aluminum_Insert_Block_2">
+    <!-- sw2robot material="6061-T6 (SS)" appearance="color" density="2700" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Aluminum_Insert_Block_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Aluminum_Insert_Block_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.79172944e-09 0.0001003009529 -0.0001223899977" rpy="0 0 0" />
+      <mass value="0.156021" />
+      <inertia ixx="0.000164777" ixy="1.84111e-11" ixz="9.73733e-13" iyy="9.63004e-05" iyz="5.57041e-06" izz="8.50403e-05" />
+    </inertial>
+  </link>
+  <link name="Short_Rocker_Arm_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="3.73122475e-05 0 -0.0009410210395" rpy="0 0 0" />
+      <mass value="0.251471" />
+      <inertia ixx="0.00294918" ixy="-2.65993e-20" ixz="2.58405e-05" iyy="0.00307448" iyz="2.91435e-19" izz="0.000246224" />
+    </inertial>
+  </link>
+  <link name="Short_Rocker_Arm_2">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Arm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Short_Rocker_Arm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="3.73122475e-05 0 -0.0009410210395" rpy="0 0 0" />
+      <mass value="0.251471" />
+      <inertia ixx="0.00294918" ixy="-2.65993e-20" ixz="2.58405e-05" iyy="0.00307448" iyz="2.91435e-19" izz="0.000246224" />
+    </inertial>
+  </link>
+  <link name="Wheel_2_1_George_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_2_1_George_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_2_1_George_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="3.037560419e-08 1.09242767e-07 1.025346552e-07" rpy="0 0 0" />
+      <mass value="1.80846" />
+      <inertia ixx="0.0135247" ixy="9.47472e-10" ixz="6.72263e-13" iyy="0.0238945" iyz="-1.00299e-09" izz="0.0135247" />
+    </inertial>
+  </link>
+  <link name="Wheel_2_1_George_2">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_2_1_George_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_2_1_George_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="3.037560419e-08 1.09242767e-07 1.025346552e-07" rpy="0 0 0" />
+      <mass value="1.80846" />
+      <inertia ixx="0.0135247" ixy="9.47472e-10" ixz="6.72263e-13" iyy="0.0238945" iyz="-1.00299e-09" izz="0.0135247" />
+    </inertial>
+  </link>
+  <link name="Wheel_Plate_hex_bearing_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_hex_bearing_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_hex_bearing_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="4.210835032e-11 0 -1.805644049e-06" rpy="0 0 0" />
+      <mass value="0.0293941" />
+      <inertia ixx="2.24185e-05" ixy="5.59431e-25" ixz="-8.20793e-22" iyy="4.47877e-05" iyz="-2.17783e-24" izz="2.24185e-05" />
+    </inertial>
+  </link>
+  <link name="Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.749135074e-10 0 -1.782098875e-06" rpy="0 0 0" />
+      <mass value="0.0296281" />
+      <inertia ixx="2.24128e-05" ixy="4.03897e-25" ixz="-8.28796e-22" iyy="4.47757e-05" iyz="1.61559e-25" izz="2.24128e-05" />
+    </inertial>
+  </link>
+  <link name="am_0856_500_Hex_Shaft_for_Modulox_REV3_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/am_0856_500_Hex_Shaft_for_Modulox_REV3_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/am_0856_500_Hex_Shaft_for_Modulox_REV3_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0 0 -6.75713774e-05" rpy="0 0 0" />
+      <mass value="0.021286" />
+      <inertia ixx="4.14317e-05" ixy="7.18936e-23" ixz="-1.86397e-21" iyy="4.14317e-05" iyz="-4.01785e-22" izz="4.76807e-07" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Blank_Odrive_S1_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001612128573 4.360176176e-05 -0.01198982885" rpy="0 0 0" />
+      <mass value="0.296381" />
+      <inertia ixx="0.000244032" ixy="1.62586e-07" ixz="5.08048e-06" iyy="0.000225353" iyz="-4.03313e-07" izz="0.000293232" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001632174895 -2.196353808e-07 0.001415325039" rpy="0 0 0" />
+      <mass value="0.00324702" />
+      <inertia ixx="2.72297e-07" ixy="1.42489e-12" ixz="-8.81007e-09" iyy="4.2287e-07" iyz="5.47146e-12" izz="1.84778e-07" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.468852915e-09 0 -4.149536805e-06" rpy="0 0 0" />
+      <mass value="0.0101299" />
+      <inertia ixx="1.26727e-05" ixy="4.03897e-25" ixz="-8.26505e-22" iyy="2.53283e-05" iyz="1.61559e-25" izz="1.26727e-05" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.920221606e-05 0 -3.386597168e-05" rpy="0 0 0" />
+      <mass value="0.0506685" />
+      <inertia ixx="6.801e-05" ixy="2.19047e-22" ixz="-3.08837e-05" iyy="0.000171596" iyz="-1.38464e-22" izz="0.000103671" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00195590711 0 -0.0011292369" rpy="0 0 0" />
+      <mass value="0.0322292" />
+      <inertia ixx="5.18962e-05" ixy="1.94581e-22" ixz="-2.45722e-05" iyy="0.000132112" iyz="-1.03999e-22" izz="8.02697e-05" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Planetary_to_motor_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.696094752e-08 0.00202289158 -4.954226616e-08" rpy="0 0 0" />
+      <mass value="0.011269" />
+      <inertia ixx="2.25184e-06" ixy="-4.12238e-23" ixz="-6.33541e-23" iyy="1.34782e-06" iyz="-9.80529e-23" izz="2.25184e-06" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__TG60_G10_STEP_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.585215091e-07 -2.300686486e-05 0.003602493394" rpy="0 0 0" />
+      <mass value="0.208146" />
+      <inertia ixx="0.00015614" ixy="-5.4098e-07" ixz="1.55125e-09" iyy="0.000155187" iyz="-9.36287e-08" izz="0.000105368" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Wheel_Left_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Wheel_Left_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Wheel_Left_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.056134981e-07 0.0002872330684 -1.448937382e-07" rpy="0 0 0" />
+      <mass value="1.80491" />
+      <inertia ixx="0.0134909" ixy="-1.06961e-09" ixz="4.17484e-12" iyy="0.0238441" iyz="2.82839e-10" izz="0.0134908" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_1__Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.749135074e-10 0 -1.782098875e-06" rpy="0 0 0" />
+      <mass value="0.0296281" />
+      <inertia ixx="2.24128e-05" ixy="4.03897e-25" ixz="-8.28796e-22" iyy="4.47757e-05" iyz="1.61559e-25" izz="2.24128e-05" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Blank_Odrive_S1_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001612128573 4.360176176e-05 -0.01198982885" rpy="0 0 0" />
+      <mass value="0.296381" />
+      <inertia ixx="0.000244032" ixy="1.62586e-07" ixz="5.08048e-06" iyy="0.000225353" iyz="-4.03313e-07" izz="0.000293232" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001632174895 -2.196353808e-07 0.001415325039" rpy="0 0 0" />
+      <mass value="0.00324702" />
+      <inertia ixx="2.72297e-07" ixy="1.42489e-12" ixz="-8.81007e-09" iyy="4.2287e-07" iyz="5.47146e-12" izz="1.84778e-07" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.468852915e-09 0 -4.149536805e-06" rpy="0 0 0" />
+      <mass value="0.0101299" />
+      <inertia ixx="1.26727e-05" ixy="4.03897e-25" ixz="-8.26505e-22" iyy="2.53283e-05" iyz="1.61559e-25" izz="1.26727e-05" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.920221606e-05 0 -3.386597168e-05" rpy="0 0 0" />
+      <mass value="0.0506685" />
+      <inertia ixx="6.801e-05" ixy="2.19047e-22" ixz="-3.08837e-05" iyy="0.000171596" iyz="-1.38464e-22" izz="0.000103671" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00195590711 0 -0.0011292369" rpy="0 0 0" />
+      <mass value="0.0322292" />
+      <inertia ixx="5.18962e-05" ixy="1.94581e-22" ixz="-2.45722e-05" iyy="0.000132112" iyz="-1.03999e-22" izz="8.02697e-05" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Planetary_to_motor_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.696094752e-08 0.00202289158 -4.954226616e-08" rpy="0 0 0" />
+      <mass value="0.011269" />
+      <inertia ixx="2.25184e-06" ixy="-4.12238e-23" ixz="-6.33541e-23" iyy="1.34782e-06" iyz="-9.80529e-23" izz="2.25184e-06" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__TG60_G10_STEP_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.585215091e-07 -2.300686486e-05 0.003602493394" rpy="0 0 0" />
+      <mass value="0.208146" />
+      <inertia ixx="0.00015614" ixy="-5.4098e-07" ixz="1.55125e-09" iyy="0.000155187" iyz="-9.36287e-08" izz="0.000105368" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Wheel_Left_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Wheel_Left_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Wheel_Left_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.056134981e-07 0.0002872330684 -1.448937382e-07" rpy="0 0 0" />
+      <mass value="1.80491" />
+      <inertia ixx="0.0134909" ixy="-1.06961e-09" ixz="4.17484e-12" iyy="0.0238441" iyz="2.82839e-10" izz="0.0134908" />
+    </inertial>
+  </link>
+  <link name="Left_mounted_motor_assembly_2__Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.749135074e-10 0 -1.782098875e-06" rpy="0 0 0" />
+      <mass value="0.0296281" />
+      <inertia ixx="2.24128e-05" ixy="4.03897e-25" ixz="-8.28796e-22" iyy="4.47757e-05" iyz="1.61559e-25" izz="2.24128e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Blank_Odrive_S1_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001612128573 4.360176176e-05 -0.01198982885" rpy="0 0 0" />
+      <mass value="0.296381" />
+      <inertia ixx="0.000244032" ixy="1.62586e-07" ixz="5.08048e-06" iyy="0.000225353" iyz="-4.03313e-07" izz="0.000293232" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001632174895 -2.196353808e-07 0.001415325039" rpy="0 0 0" />
+      <mass value="0.00324702" />
+      <inertia ixx="2.72297e-07" ixy="1.42489e-12" ixz="-8.81007e-09" iyy="4.2287e-07" iyz="5.47146e-12" izz="1.84778e-07" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.468852915e-09 0 -4.149536805e-06" rpy="0 0 0" />
+      <mass value="0.0101299" />
+      <inertia ixx="1.26727e-05" ixy="4.03897e-25" ixz="-8.26505e-22" iyy="2.53283e-05" iyz="1.61559e-25" izz="1.26727e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.920221606e-05 0 -3.386597168e-05" rpy="0 0 0" />
+      <mass value="0.0506685" />
+      <inertia ixx="6.801e-05" ixy="2.19047e-22" ixz="-3.08837e-05" iyy="0.000171596" iyz="-1.38464e-22" izz="0.000103671" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00195590711 0 -0.0011292369" rpy="0 0 0" />
+      <mass value="0.0322292" />
+      <inertia ixx="5.18962e-05" ixy="1.94581e-22" ixz="-2.45722e-05" iyy="0.000132112" iyz="-1.03999e-22" izz="8.02697e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Planetary_to_motor_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.696094752e-08 0.00202289158 -4.954226616e-08" rpy="0 0 0" />
+      <mass value="0.011269" />
+      <inertia ixx="2.25184e-06" ixy="-4.12238e-23" ixz="-6.33541e-23" iyy="1.34782e-06" iyz="-9.80529e-23" izz="2.25184e-06" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__TG60_G10_STEP_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.585215091e-07 -2.300686486e-05 0.003602493394" rpy="0 0 0" />
+      <mass value="0.208146" />
+      <inertia ixx="0.00015614" ixy="-5.4098e-07" ixz="1.55125e-09" iyy="0.000155187" iyz="-9.36287e-08" izz="0.000105368" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.749135074e-10 0 -1.782098875e-06" rpy="0 0 0" />
+      <mass value="0.0296281" />
+      <inertia ixx="2.24128e-05" ixy="4.03897e-25" ixz="-8.28796e-22" iyy="4.47757e-05" iyz="1.61559e-25" izz="2.24128e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_1__Wheel_Right_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Right_mounted_motor_assembly__Wheel_Right_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Right_mounted_motor_assembly__Wheel_Right_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.119451542e-07 -0.0002869527736 -3.681973688e-07" rpy="0 0 0" />
+      <mass value="1.80491" />
+      <inertia ixx="0.0134908" ixy="-1.97826e-09" ixz="-2.88604e-12" iyy="0.023844" iyz="1.19382e-09" izz="0.0134908" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_0_5in_6_32_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.902266244e-07 -6.865938656e-07 -3.714475378e-09" rpy="0 0 0" />
+      <mass value="0.000347857" />
+      <inertia ixx="5.75754e-09" ixy="-7.24149e-14" ixz="1.14906e-12" iyy="5.75756e-09" iyz="4.85077e-13" izz="2.33761e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__c_1_5in_6_32_Threaded_Hex_Standoff_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.92427045e-06 5.280414333e-12 -1.14992725e-07" rpy="0 0 0" />
+      <mass value="0.00118695" />
+      <inertia ixx="1.34201e-07" ixy="3.37797e-21" ixz="2.76851e-24" iyy="1.34201e-07" iyz="2.55333e-12" izz="7.21265e-09" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Blank_Odrive_S1_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Blank_Odrive_S1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.001612128573 4.360176176e-05 -0.01198982885" rpy="0 0 0" />
+      <mass value="0.296381" />
+      <inertia ixx="0.000244032" ixy="1.62586e-07" ixz="5.08048e-06" iyy="0.000225353" iyz="-4.03313e-07" izz="0.000293232" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Gobilda_14mm_Clamping_Hub_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0001632174895 -2.196353808e-07 0.001415325039" rpy="0 0 0" />
+      <mass value="0.00324702" />
+      <inertia ixx="2.72297e-07" ixy="1.42489e-12" ixz="-8.81007e-09" iyy="4.2287e-07" iyz="5.47146e-12" izz="1.84778e-07" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Inner_Ring_Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.468852915e-09 0 -4.149536805e-06" rpy="0 0 0" />
+      <mass value="0.0101299" />
+      <inertia ixx="1.26727e-05" ixy="4.03897e-25" ixz="-8.26505e-22" iyy="2.53283e-05" iyz="1.61559e-25" izz="1.26727e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Lid_Sheet_Metal_1_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="5.920221606e-05 0 -3.386597168e-05" rpy="0 0 0" />
+      <mass value="0.0506685" />
+      <inertia ixx="6.801e-05" ixy="2.19047e-22" ixz="-3.08837e-05" iyy="0.000171596" iyz="-1.38464e-22" izz="0.000103671" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Motor_Enclosure_Midplate_Sheet_netal_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.00195590711 0 -0.0011292369" rpy="0 0 0" />
+      <mass value="0.0322292" />
+      <inertia ixx="5.18962e-05" ixy="1.94581e-22" ixz="-2.45722e-05" iyy="0.000132112" iyz="-1.03999e-22" izz="8.02697e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Planetary_to_motor_mount_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__Planetary_to_motor_mount_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.696094752e-08 0.00202289158 -4.954226616e-08" rpy="0 0 0" />
+      <mass value="0.011269" />
+      <inertia ixx="2.25184e-06" ixy="-4.12238e-23" ixz="-6.33541e-23" iyy="1.34782e-06" iyz="-9.80529e-23" izz="2.25184e-06" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__TG60_G10_STEP_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Left_mounted_motor_assembly__TG60_G10_STEP_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-5.585215091e-07 -2.300686486e-05 0.003602493394" rpy="0 0 0" />
+      <mass value="0.208146" />
+      <inertia ixx="0.00015614" ixy="-5.4098e-07" ixz="1.55125e-09" iyy="0.000155187" iyz="-9.36287e-08" izz="0.000105368" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Wheel_Plate_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Wheel_Plate_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="9.749135074e-10 0 -1.782098875e-06" rpy="0 0 0" />
+      <mass value="0.0296281" />
+      <inertia ixx="2.24128e-05" ixy="4.03897e-25" ixz="-8.28796e-22" iyy="4.47757e-05" iyz="1.61559e-25" izz="2.24128e-05" />
+    </inertial>
+  </link>
+  <link name="Right_mounted_motor_assembly_2__Wheel_Right_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Right_mounted_motor_assembly__Wheel_Right_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/Right_mounted_motor_assembly__Wheel_Right_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="1.119451542e-07 -0.0002869527736 -3.681973688e-07" rpy="0 0 0" />
+      <mass value="1.80491" />
+      <inertia ixx="0.0134908" ixy="-1.97826e-09" ixz="-2.88604e-12" iyy="0.023844" iyz="1.19382e-09" izz="0.0134908" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_10_3">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_10_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_10_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.278992202e-17 9.752935735e-18 6.234808525e-17" rpy="0 0 0" />
+      <mass value="0.0809059" />
+      <inertia ixx="0.000442022" ixy="-3.94203e-22" ixz="1.49835e-20" iyy="0.000442022" iyz="-9.03737e-20" izz="1.40899e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_10_4">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_10_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_10_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.278992202e-17 9.752935735e-18 6.234808525e-17" rpy="0 0 0" />
+      <mass value="0.0809059" />
+      <inertia ixx="0.000442022" ixy="-3.94203e-22" ixz="1.49835e-20" iyy="0.000442022" iyz="-9.03737e-20" izz="1.40899e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.172508263e-17 1.044961394e-17 3.085353624e-16" rpy="0 0 0" />
+      <mass value="0.173948" />
+      <inertia ixx="0.00433811" ixy="2.24243e-21" ixz="7.21358e-20" iyy="0.00433811" iyz="-9.27769e-19" izz="3.02932e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_23_5_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.172508263e-17 1.044961394e-17 3.085353624e-16" rpy="0 0 0" />
+      <mass value="0.173948" />
+      <inertia ixx="0.00433811" ixy="2.24243e-21" ixz="7.21358e-20" iyy="0.00433811" iyz="-9.27769e-19" izz="3.02932e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_23_5_8">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.172508263e-17 1.044961394e-17 3.085353624e-16" rpy="0 0 0" />
+      <mass value="0.173948" />
+      <inertia ixx="0.00433811" ixy="2.24243e-21" ixz="7.21358e-20" iyy="0.00433811" iyz="-9.27769e-19" izz="3.02932e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_23_5_9">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_23_5_10.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.172508263e-17 1.044961394e-17 3.085353624e-16" rpy="0 0 0" />
+      <mass value="0.173948" />
+      <inertia ixx="0.00433811" ixy="2.24243e-21" ixz="7.21358e-20" iyy="0.00433811" iyz="-9.27769e-19" izz="3.02932e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_25_5_5">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.562567314e-17 1.126415757e-17 4.804286017e-16" rpy="0 0 0" />
+      <mass value="0.20631" />
+      <inertia ixx="0.00723049" ixy="8.16841e-21" ixz="2.11788e-19" iyy="0.00723049" iyz="-1.55572e-18" izz="3.59292e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_25_5_6">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.562567314e-17 1.126415757e-17 4.804286017e-16" rpy="0 0 0" />
+      <mass value="0.20631" />
+      <inertia ixx="0.00723049" ixy="8.16841e-21" ixz="2.11788e-19" iyy="0.00723049" iyz="-1.55572e-18" izz="3.59292e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_25_5_7">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.562567314e-17 1.126415757e-17 4.804286017e-16" rpy="0 0 0" />
+      <mass value="0.20631" />
+      <inertia ixx="0.00723049" ixy="8.16841e-21" ixz="2.11788e-19" iyy="0.00723049" iyz="-1.55572e-18" izz="3.59292e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__c_30mm_T_Slot_25_5_8">
+    <!-- sw2robot appearance="color" density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__c_30mm_T_Slot_25_5_5.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-1.562567314e-17 1.126415757e-17 4.804286017e-16" rpy="0 0 0" />
+      <mass value="0.20631" />
+      <inertia ixx="0.00723049" ixy="8.16841e-21" ixz="2.11788e-19" iyy="0.00723049" iyz="-1.55572e-18" izz="3.59292e-05" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__Front_Assem_30mm_1">
+    <!-- sw2robot inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__Front_Assem_30mm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__Front_Assem_30mm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="2.07091877e-08 -8.999999634e-09 3.820919559e-08" rpy="0 0 0" />
+      <mass value="0.509707" />
+      <inertia ixx="0.00530863" ixy="8.55633e-19" ixz="5.52013e-18" iyy="0.0273503" iyz="-1.26763e-19" izz="0.0221304" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__back_panel_30mm_1">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__back_panel_30mm_1.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__back_panel_30mm_1.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="-0.0002194832119 3.108593874e-05 0.004044708123" rpy="0 0 0" />
+      <mass value="0.129263" />
+      <inertia ixx="0.000867238" ixy="-4.84174e-09" ixz="-6.6169e-07" iyy="0.00479768" iyz="8.78213e-08" izz="0.00393049" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__side_panel_3">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__side_panel_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__side_panel_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.002341183631 -2.57042941e-10 -9.362525897e-05" rpy="0 0 0" />
+      <mass value="0.153349" />
+      <inertia ixx="0.00109755" ixy="2.1447e-12" ixz="0.000121348" iyy="0.00791244" iyz="-4.08526e-13" izz="0.00681496" />
+    </inertial>
+  </link>
+  <link name="full_assem_30mm_1__side_panel_4">
+    <!-- sw2robot density="1000" inertia="solidworks" -->
+    <visual>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__side_panel_3.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <origin xyz="0 0 0" rpy="0 0 0" />
+      <geometry>
+        <mesh filename="package://rover_urdf/meshes/full_assem_30mm__side_panel_3.stl" />
+      </geometry>
+    </collision>
+    <inertial>
+      <origin xyz="0.002341183631 -2.57042941e-10 -9.362525897e-05" rpy="0 0 0" />
+      <mass value="0.153349" />
+      <inertia ixx="0.00109755" ixy="2.1447e-12" ixz="0.000121348" iyy="0.00791244" iyz="-4.08526e-13" izz="0.00681496" />
+    </inertial>
+  </link>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_6" type="fixed">
+    <origin xyz="-0.3250097016 -8.911859444e-08 2.045442648e-06" rpy="1.57080269 0.1073215973 1.570797008" />
+    <parent link="base_link" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_6" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_8" type="fixed">
+    <origin xyz="0.3250097016 -8.578954706e-08 -2.029785169e-06" rpy="-1.570789984 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_8" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_1" type="fixed">
+    <origin xyz="0.3667102984 -8.868163157e-08 -2.334135901e-06" rpy="1.57080267 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_7" type="fixed">
+    <origin xyz="-0.3667102984 -8.577795455e-08 2.346585371e-06" rpy="-1.570789984 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_7" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__c_9520T16_Clamping_Two_Piece_Shaft_Collar_1" type="fixed">
+    <origin xyz="0.3778923816 0.0005285307093 -0.0002070611631" rpy="-1.570813866 1.201762718 -1.570812686" />
+    <parent link="base_link" />
+    <child link="c_9520T16_Clamping_Two_Piece_Shaft_Collar_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__Rocker_Shaft_Mount_1" type="fixed">
+    <origin xyz="0.2966988274 8.709045295e-07 9.670100946e-06" rpy="1.57080267 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="Rocker_Shaft_Mount_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__Rocker_Shaft_Mount_2" type="fixed">
+    <origin xyz="-0.2967011726 8.709144576e-07 1.342442098e-05" rpy="1.57080267 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="Rocker_Shaft_Mount_2" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="c_4390N181_Flanged_Ball_Bearing_1_1__Rocker_Connection_Plate_1_0_2" type="fixed">
+    <origin xyz="-0.003334904701 -0.02269882007 0.00137470159" rpy="0 0 -0.08043034699" />
+    <parent link="c_4390N181_Flanged_Ball_Bearing_1_1" />
+    <child link="Rocker_Connection_Plate_1_0_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Connection_Plate_1_0_2__Long_Rocker_Arm_1" type="fixed">
+    <origin xyz="-0.266174902 -0.1092907152 -0.02222500004" rpy="1.570796327 0 -1.090830782" />
+    <parent link="Rocker_Connection_Plate_1_0_2" />
+    <child link="Long_Rocker_Arm_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Rocker_Connection_Plate_1_0_2__Short_Rocker_Arm_1" type="fixed">
+    <origin xyz="0.1887890416 -0.09986320068 -0.02222499999" rpy="1.570796327 0 0.9599310886" />
+    <parent link="Rocker_Connection_Plate_1_0_2" />
+    <child link="Short_Rocker_Arm_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Rocker_Connection_Plate_1_0_2__Rocker_Connection_Plate_W_LEVER_ARM_2_0_3" type="fixed">
+    <origin xyz="0.0004131116017 -0.01400886519 -0.04445" rpy="0 0 0" />
+    <parent link="Rocker_Connection_Plate_1_0_2" />
+    <child link="Rocker_Connection_Plate_W_LEVER_ARM_2_0_3" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Short_Rocker_Arm_1__Bogie_Shaft_1" type="fixed">
+    <origin xyz="-0.0005180031453 0.03718803409 0.1571724495" rpy="-1.570796327 -1.570796327 4.10206857e-10" />
+    <parent link="Short_Rocker_Arm_1" />
+    <child link="Bogie_Shaft_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Short_Rocker_Arm_1__c_91259A500_Alloy_Steel_Shoulder_Screw_1" type="fixed">
+    <origin xyz="0.003524213237 -4.203902215e-07 0.1571722741" rpy="-1.570796327 -0.9405544773 -1.570796327" />
+    <parent link="Short_Rocker_Arm_1" />
+    <child link="c_91259A500_Alloy_Steel_Shoulder_Screw_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: fastener welded fixed -->
+  </joint>
+  <joint name="Rocker_Connection_Plate_W_LEVER_ARM_2_0_3__Rocker_Bogie_Top_Cover_1" type="fixed">
+    <origin xyz="0.002561632154 0.05939483803 0.02253522317" rpy="-3.141592653 0 3.076142807" />
+    <parent link="Rocker_Connection_Plate_W_LEVER_ARM_2_0_3" />
+    <child link="Rocker_Bogie_Top_Cover_1" />
+    <axis xyz="0.85491187 0.51877326 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_3" type="fixed">
+    <origin xyz="-6.158411167e-07 -4.512790595e-09 -0.0030083325" rpy="-3.141592653 0 0.6914320108" />
+    <parent link="Bogie_Shaft_1" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_3" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Shaft_1__Bogie_Connection_Plate_1_0_1" type="fixed">
+    <origin xyz="0.002442761602 -0.003268778055 0.03847945578" rpy="0 0 0.6418298968" />
+    <parent link="Bogie_Shaft_1" />
+    <child link="Bogie_Connection_Plate_1_0_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, PARALLEL, CONCENTRIC, PARALLEL -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Connection_Plate_1_0_1__Bogie_Arm_1" type="fixed">
+    <origin xyz="0.1335301427 -0.01877430106 -0.02063748994" rpy="1.570796327 0 1.308996939" />
+    <parent link="Bogie_Connection_Plate_1_0_1" />
+    <child link="Bogie_Arm_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Connection_Plate_1_0_1__Bogie_Arm_2" type="fixed">
+    <origin xyz="-0.1335304823 -0.01877430106 -0.02063748994" rpy="1.570796327 0 -1.308996939" />
+    <parent link="Bogie_Connection_Plate_1_0_1" />
+    <child link="Bogie_Arm_2" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Arm_1__Bogie_Connection_Plate_1_0_2" type="fixed">
+    <origin xyz="-0.01642556179 -0.02063751013 -0.1338393602" rpy="-1.570796327 -1.308996939 0" />
+    <parent link="Bogie_Arm_1" />
+    <child link="Bogie_Connection_Plate_1_0_2" />
+    <axis xyz="0.96592583 -0.25881905 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: 1 DOF pure translation; config sets fixed (inference said prismatic) -->
+  </joint>
+  <joint name="Bogie_Arm_2__Middle_Wheel_Axle_Connector_Plate_1" type="fixed">
+    <origin xyz="-1.403239583e-08 0.0206375 0.1039351936" rpy="-1.570796327 1.047197551 0" />
+    <parent link="Bogie_Arm_2" />
+    <child link="Middle_Wheel_Axle_Connector_Plate_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Arm_2__Middle_Wheel_Axle_Connector_Plate_2" type="fixed">
+    <origin xyz="-1.403239583e-08 -0.0206375 0.1039351936" rpy="-1.570796327 1.047197551 0" />
+    <parent link="Bogie_Arm_2" />
+    <child link="Middle_Wheel_Axle_Connector_Plate_2" />
+    <axis xyz="-0.8660254 -0.5 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: 1 DOF pure translation; config sets fixed (inference said prismatic) -->
+  </joint>
+  <joint name="Long_Rocker_Arm_1__Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" type="fixed">
+    <origin xyz="5.702096659e-09 -0.02063750002 0.2773010091" rpy="0 1.047197551 -3.141592653" />
+    <parent link="Long_Rocker_Arm_1" />
+    <child link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: only axial slide along a fastener axis -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1" type="fixed">
+    <origin xyz="0.01986171801 0.007937504502 0.04049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" type="fixed">
+    <origin xyz="-0.05862112613 -0.02063761499 -0.03543802236" rpy="1.570796327 0.1763978943 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__Blank_Odrive_S1_1" type="fixed">
+    <origin xyz="-0.02678633317 0.01141665868 0.01556632839" rpy="-1.570796327 0.5235987756 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__Blank_Odrive_S1_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__Planetary_to_motor_mount_1" type="fixed">
+    <origin xyz="-0.02861875058 -0.04170915748 0.01652311572" rpy="3.141592653 -1.047197551 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__Planetary_to_motor_mount_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1__Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" type="fixed">
+    <origin xyz="0.04153207296 0.04877924184 0.02063738501" rpy="-1.570796327 0 0.1763978943" />
+    <parent link="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <child link="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Planetary_to_motor_mount_1__Right_mounted_motor_assembly_1__TG60_G10_STEP_1" type="fixed">
+    <origin xyz="6.667672335e-06 0.03828899885 1.225781656e-05" rpy="1.570796327 -0.5235987756 3.141592653" />
+    <parent link="Right_mounted_motor_assembly_1__Planetary_to_motor_mount_1" />
+    <child link="Right_mounted_motor_assembly_1__TG60_G10_STEP_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__TG60_G10_STEP_1__Right_mounted_motor_assembly_1__Wheel_Plate_1" type="fixed">
+    <origin xyz="7.543734538e-07 -1.260656344e-05 0.07295184366" rpy="-1.570796327 0 -0.6546791589" />
+    <parent link="Right_mounted_motor_assembly_1__TG60_G10_STEP_1" />
+    <child link="Right_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Wheel_Plate_1__Right_mounted_motor_assembly_1__Wheel_Right_1" type="fixed">
+    <origin xyz="-1.552629471e-07 0.04879062382 -1.355693747e-06" rpy="0 0 0" />
+    <parent link="Right_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <child link="Right_mounted_motor_assembly_1__Wheel_Right_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Wheel_Plate_1__Right_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1" type="fixed">
+    <origin xyz="-0.0003738562996 0.005587566415 0.003740784194" rpy="3.141592653 0 3.141592653" />
+    <parent link="Right_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <child link="Right_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.1mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Wheel_Right_1__Right_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1" type="fixed">
+    <origin xyz="4.305774666e-06 0.04802937618 -4.278739788e-07" rpy="-0.00832443659 1.570796327 -0.00832443659" />
+    <parent link="Right_mounted_motor_assembly_1__Wheel_Right_1" />
+    <child link="Right_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: only axial slide along a fastener axis -->
+  </joint>
+  <joint name="Middle_Wheel_Axle_Connector_Plate_1__c_6384K361_Steel_Ball_Bearing_3_18" type="fixed">
+    <origin xyz="-0.03852914052 -0.02224481561 0.001369404599" rpy="0 0 0.311165083" />
+    <parent link="Middle_Wheel_Axle_Connector_Plate_1" />
+    <child link="c_6384K361_Steel_Ball_Bearing_3_18" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Middle_Wheel_Axle_Connector_Plate_2__c_6384K361_Steel_Ball_Bearing_3_17" type="fixed">
+    <origin xyz="-0.03852914684 -0.02224479605 -0.001369404597" rpy="-3.141592653 0 0.3141797208" />
+    <parent link="Middle_Wheel_Axle_Connector_Plate_2" />
+    <child link="c_6384K361_Steel_Ball_Bearing_3_17" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Short_Rocker_Arm_1__Short_Rocker_Aluminum_Insert_Block_1" type="fixed">
+    <origin xyz="0.0006380578948 5.769184654e-09 0.1561702892" rpy="0 0 -1.570796327" />
+    <parent link="Short_Rocker_Arm_1" />
+    <child link="Short_Rocker_Aluminum_Insert_Block_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="c_6384K361_Steel_Ball_Bearing_3_18__Wheel_2_1_George_1" type="fixed">
+    <origin xyz="7.444229491e-09 -4.301223288e-08 0.05021809444" rpy="-1.570796327 0 0.1668137021" />
+    <parent link="c_6384K361_Steel_Ball_Bearing_3_18" />
+    <child link="Wheel_2_1_George_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Wheel_2_1_George_1__Wheel_Plate_1" type="fixed">
+    <origin xyz="8.965466944e-08 -0.04840750096 -1.743190056e-06" rpy="3.141592653 0 0" />
+    <parent link="Wheel_2_1_George_1" />
+    <child link="Wheel_Plate_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Shaft_1__c_4390N181_Flanged_Ball_Bearing_1_2" type="fixed">
+    <origin xyz="-5.89948233e-07 -3.579831362e-08 0.03869226432" rpy="0 0 0.6912955852" />
+    <parent link="Bogie_Shaft_1" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_2" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Shaft_1__c_9520T16_Clamping_Two_Piece_Shaft_Collar_2" type="fixed">
+    <origin xyz="-0.0003616884019 0.0004368459209 0.04987434881" rpy="0 0 0.6912955852" />
+    <parent link="Bogie_Shaft_1" />
+    <child link="c_9520T16_Clamping_Two_Piece_Shaft_Collar_2" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Arm_1__Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" type="fixed">
+    <origin xyz="2.723110378e-07 0.0206375 0.1259710889" rpy="0 1.047197551 -3.141592653" />
+    <parent link="Bogie_Arm_1" />
+    <child link="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" type="fixed">
+    <origin xyz="-0.04944758762 0.02063738501 -0.04073405944" rpy="1.570796327 0.1763978943 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_2__TG60_G10_STEP_1" type="fixed">
+    <origin xyz="-0.01943126266 -0.03872315634 0.0112267241" rpy="1.571152918 1.570796327 0.0003565905898" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.6mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1__Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" type="fixed">
+    <origin xyz="0.05149263074 0.04517520156 -0.02063761499" rpy="-1.570796327 0 0.1763978943" />
+    <parent link="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <child link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__TG60_G10_STEP_1__Right_mounted_motor_assembly_2__Planetary_to_motor_mount_1" type="fixed">
+    <origin xyz="-3.545415091e-07 -1.394940486e-05 -0.03828899886" rpy="1.570796327 0 2.617993878" />
+    <parent link="Right_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <child link="Right_mounted_motor_assembly_2__Planetary_to_motor_mount_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__TG60_G10_STEP_1__Right_mounted_motor_assembly_2__Wheel_Plate_1" type="fixed">
+    <origin xyz="7.543734538e-07 -1.260656344e-05 0.07295184366" rpy="-1.570796327 0 -0.6546791589" />
+    <parent link="Right_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <child link="Right_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1" type="fixed">
+    <origin xyz="0.01986171801 0.007937504502 0.04049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__Blank_Odrive_S1_1" type="fixed">
+    <origin xyz="-0.02678633317 0.01141665868 0.01556632839" rpy="-1.570796327 0.5235987756 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__Blank_Odrive_S1_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Wheel_Plate_1__Right_mounted_motor_assembly_2__Wheel_Right_1" type="fixed">
+    <origin xyz="-1.552629471e-07 0.04879062382 -1.355693747e-06" rpy="0 0 0" />
+    <parent link="Right_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <child link="Right_mounted_motor_assembly_2__Wheel_Right_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Wheel_Plate_1__Right_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1" type="fixed">
+    <origin xyz="-0.0003738562996 0.005587566415 0.003740784194" rpy="3.141592653 0 3.141592653" />
+    <parent link="Right_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <child link="Right_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.1mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Wheel_Right_1__Right_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1" type="fixed">
+    <origin xyz="4.305774666e-06 0.04802937618 -4.278739747e-07" rpy="-0.02079248259 1.570796327 -0.02079248259" />
+    <parent link="Right_mounted_motor_assembly_2__Wheel_Right_1" />
+    <child link="Right_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: only axial slide along a fastener axis -->
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__full_assem_30mm_1__side_panel_4" type="fixed">
+    <origin xyz="0.3038438011 -0.1084385537 0.007982036913" rpy="-3.141586311 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="full_assem_30mm_1__side_panel_4" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="full_assem_30mm_1__side_panel_4__full_assem_30mm_1__c_30mm_T_Slot_25_5_7" type="fixed">
+    <origin xyz="-0.05708246887 -0.01579375046 0.1122451886" rpy="-1.570796327 0 -1.570796327" />
+    <parent link="full_assem_30mm_1__side_panel_4" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_25_5_7" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: DISTANCE, DISTANCE -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="full_assem_30mm_1__side_panel_4__full_assem_30mm_1__c_30mm_T_Slot_23_5_10" type="fixed">
+    <origin xyz="0.1849317958 -0.3038437505 0.1122451886" rpy="1.570796327 -1.570796327 3.141592654" />
+    <parent link="full_assem_30mm_1__side_panel_4" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_25_5_7__full_assem_30mm_1__c_30mm_T_Slot_10_3" type="fixed">
+    <origin xyz="0 0.112 -0.33885" rpy="1.570796327 0 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_25_5_7" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_10_3" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: DISTANCE, DISTANCE -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__c_30mm_T_Slot_25_5_6" type="fixed">
+    <origin xyz="0 -0.2420142647 -0.28805" rpy="-1.570796327 1.570796327 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_25_5_6" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: DISTANCE, COINCIDENT, DISTANCE, COINCIDENT -->
+    <!-- sw2robot-note: geo: 1 DOF pure translation; config sets fixed (inference said prismatic) -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__c_30mm_T_Slot_23_5_9" type="fixed">
+    <origin xyz="0 -0.1524 0" rpy="0 0 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_23_5_9" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__c_30mm_T_Slot_25_5_5" type="fixed">
+    <origin xyz="-0.224 -0.2420142647 0.28805" rpy="1.570796327 1.570796327 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_25_5_5" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__c_30mm_T_Slot_25_5_8" type="fixed">
+    <origin xyz="-0.224 -0.2420142647 -0.28805" rpy="-1.570796327 0 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_25_5_8" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__back_panel_30mm_1" type="fixed">
+    <origin xyz="-0.1216935796 -0.596617498 0.0004315586839" rpy="-4.102067346e-10 -1.570796327 3.141592654" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__back_panel_30mm_1" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_23_5_10__full_assem_30mm_1__side_panel_3" type="fixed">
+    <origin xyz="-0.1122451887 -0.1849317959 -0.3038437495" rpy="1.570796327 0 1.570796327" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_23_5_10" />
+    <child link="full_assem_30mm_1__side_panel_3" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: LOCK -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_10_3__full_assem_30mm_1__c_30mm_T_Slot_23_5_7" type="fixed">
+    <origin xyz="0.28805 0 -0.112" rpy="0 -1.570796327 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_10_3" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_23_5_7" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, DISTANCE, DISTANCE, COINCIDENT, DISTANCE, DISTANCE -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_25_5_6__full_assem_30mm_1__c_30mm_T_Slot_10_4" type="fixed">
+    <origin xyz="0 0.112 -0.33885" rpy="1.570796327 -1.570796327 0" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_25_5_6" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_10_4" />
+    <axis xyz="-1 0 0" />
+    <!-- mates: DISTANCE, DISTANCE, COINCIDENT, DISTANCE, DISTANCE, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="full_assem_30mm_1__c_30mm_T_Slot_10_4__full_assem_30mm_1__c_30mm_T_Slot_23_5_8" type="fixed">
+    <origin xyz="0 0.28805 0.112" rpy="-1.570796327 0 3.141592654" />
+    <parent link="full_assem_30mm_1__c_30mm_T_Slot_10_4" />
+    <child link="full_assem_30mm_1__c_30mm_T_Slot_23_5_8" />
+    <axis xyz="-1 0 0" />
+    <!-- mates: COINCIDENT, DISTANCE, DISTANCE, COINCIDENT, DISTANCE, DISTANCE -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="c_4390N181_Flanged_Ball_Bearing_1_6__Rocker_Connection_Plate_W_LEVER_ARM_2_0_2" type="fixed">
+    <origin xyz="-0.002722230528 -0.0368177606 0.00137470159" rpy="0 0 -0.04434773348" />
+    <parent link="c_4390N181_Flanged_Ball_Bearing_1_6" />
+    <child link="Rocker_Connection_Plate_W_LEVER_ARM_2_0_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="Short_Rocker_Arm_1__Short_Rocker_Arm_2" type="fixed">
+    <origin xyz="0 -0.69172 0" rpy="0 0 0" />
+    <parent link="Short_Rocker_Arm_1" />
+    <child link="Short_Rocker_Arm_2" />
+    <axis xyz="1 0 0" />
+    <!-- mates: PARALLEL, PARALLEL -->
+    <!-- sw2robot-note: geo: under-constrained (4 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="Short_Rocker_Arm_2__Short_Rocker_Aluminum_Insert_Block_2" type="fixed">
+    <origin xyz="0.0004094578949 5.769184654e-09 0.1561702892" rpy="0 0 -1.570796327" />
+    <parent link="Short_Rocker_Arm_2" />
+    <child link="Short_Rocker_Aluminum_Insert_Block_2" />
+    <axis xyz="-1 0 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Short_Rocker_Arm_2__Rocker_Connection_Plate_Cleaned_1" type="fixed">
+    <origin xyz="-0.02241240024 -0.02222499999 -0.2143924865" rpy="-1.570796327 -1.025380936 0" />
+    <parent link="Short_Rocker_Arm_2" />
+    <child link="Rocker_Connection_Plate_Cleaned_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: PARALLEL, COINCIDENT, CONCENTRIC, PARALLEL, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Short_Rocker_Arm_2__c_91259A500_Alloy_Steel_Shoulder_Screw_2" type="fixed">
+    <origin xyz="0.003524213237 -4.203902215e-07 0.1571722741" rpy="-1.570796327 -0.9405544773 -1.570796327" />
+    <parent link="Short_Rocker_Arm_2" />
+    <child link="c_91259A500_Alloy_Steel_Shoulder_Screw_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: fastener welded fixed -->
+  </joint>
+  <joint name="Short_Rocker_Arm_2__Bogie_Shaft_2" type="fixed">
+    <origin xyz="-0.000517931988 -0.06055603409 0.1571724496" rpy="-2.950526518 -1.570796327 -1.761862463" />
+    <parent link="Short_Rocker_Arm_2" />
+    <child link="Bogie_Shaft_2" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Rocker_Connection_Plate_Cleaned_1__Long_Rocker_Arm_3" type="fixed">
+    <origin xyz="-0.2584540075 -0.1312238567 0.02222499996" rpy="-1.570796327 0 2.116211718" />
+    <parent link="Rocker_Connection_Plate_Cleaned_1" />
+    <child link="Long_Rocker_Arm_3" />
+    <axis xyz="0 1 0" />
+    <!-- mates: PARALLEL, COINCIDENT, PARALLEL, CONCENTRIC, PARALLEL, COINCIDENT, PARALLEL, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Shaft_2__c_9520T16_Clamping_Two_Piece_Shaft_Collar_3" type="fixed">
+    <origin xyz="-0.0003616884019 -0.0004367747139 0.02654158304" rpy="-3.141592653 0 -0.6912955852" />
+    <parent link="Bogie_Shaft_2" />
+    <child link="c_9520T16_Clamping_Two_Piece_Shaft_Collar_3" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Long_Rocker_Arm_3__Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" type="fixed">
+    <origin xyz="2.723091653e-07 0.0206375 0.287893545" rpy="0 1.047197551 3.141592653" />
+    <parent link="Long_Rocker_Arm_3" />
+    <child link="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" type="fixed">
+    <origin xyz="-0.04944758762 0.02063738501 -0.04073405944" rpy="1.570796327 0.1763978943 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_2__TG60_G10_STEP_1" type="fixed">
+    <origin xyz="-0.01943126265 -0.03872315632 0.0112267241" rpy="1.571253202 1.570796327 0.0004568755898" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.6mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1__Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" type="fixed">
+    <origin xyz="0.05149263074 0.04517520156 -0.02063761499" rpy="-1.570796327 0 0.1763978943" />
+    <parent link="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <child link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__TG60_G10_STEP_1__Left_mounted_motor_assembly_2__Planetary_to_motor_mount_1" type="fixed">
+    <origin xyz="-3.545415091e-07 -1.394940486e-05 -0.03828899886" rpy="1.570796327 0 2.617993878" />
+    <parent link="Left_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <child link="Left_mounted_motor_assembly_2__Planetary_to_motor_mount_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__TG60_G10_STEP_1__Left_mounted_motor_assembly_2__Wheel_Plate_1" type="fixed">
+    <origin xyz="-4.555796329e-07 -1.224313748e-05 0.07295184366" rpy="-1.570796327 0 0.06998905929" />
+    <parent link="Left_mounted_motor_assembly_2__TG60_G10_STEP_1" />
+    <child link="Left_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1" type="fixed">
+    <origin xyz="0.01986171801 0.007937504502 0.04049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__Blank_Odrive_S1_1" type="fixed">
+    <origin xyz="-0.02678633317 0.01141665868 0.01556632839" rpy="-1.570796327 0.5235987756 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__Blank_Odrive_S1_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Wheel_Plate_1__Left_mounted_motor_assembly_2__Wheel_Left_1" type="fixed">
+    <origin xyz="1.903403637e-07 0.04879576196 -1.947131975e-06" rpy="-3.139802931 -1.570796327 -0.00178972259" />
+    <parent link="Left_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <child link="Left_mounted_motor_assembly_2__Wheel_Left_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Wheel_Plate_1__Left_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1" type="fixed">
+    <origin xyz="-0.0003738562996 0.005587566415 0.003740784195" rpy="3.141592653 0 3.141592653" />
+    <parent link="Left_mounted_motor_assembly_2__Wheel_Plate_1" />
+    <child link="Left_mounted_motor_assembly_2__Gobilda_14mm_Clamping_Hub_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.1mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Wheel_Left_1__Left_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1" type="fixed">
+    <origin xyz="1.635649169e-07 -0.04802423804 3.960164001e-06" rpy="0 0 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_2__Wheel_Left_1" />
+    <child link="Left_mounted_motor_assembly_2__Inner_Ring_Wheel_Plate_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: only axial slide along a fastener axis -->
+  </joint>
+  <joint name="c_9520T16_Clamping_Two_Piece_Shaft_Collar_3__c_4390N181_Flanged_Ball_Bearing_1_5" type="fixed">
+    <origin xyz="-3.300476182e-07 -0.0005667553025 0.01121731872" rpy="3.141592653 0 0" />
+    <parent link="c_9520T16_Clamping_Two_Piece_Shaft_Collar_3" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_5" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="c_4390N181_Flanged_Ball_Bearing_1_5__Bogie_Connection_Plate_1_0_4" type="fixed">
+    <origin xyz="-0.0002015318523 0.004076071494 -0.0002127882751" rpy="-3.141592653 0 0.04946568841" />
+    <parent link="c_4390N181_Flanged_Ball_Bearing_1_5" />
+    <child link="Bogie_Connection_Plate_1_0_4" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Connection_Plate_1_0_4__Bogie_Arm_5" type="fixed">
+    <origin xyz="-0.1335304823 -0.01877430106 0.02063751006" rpy="1.570796327 0 -1.308996939" />
+    <parent link="Bogie_Connection_Plate_1_0_4" />
+    <child link="Bogie_Arm_5" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Arm_5__Middle_Wheel_Axle_Connector_Plate_4" type="fixed">
+    <origin xyz="-1.403239583e-08 -0.0206375 0.1039351936" rpy="-1.570796327 1.047197551 0" />
+    <parent link="Bogie_Arm_5" />
+    <child link="Middle_Wheel_Axle_Connector_Plate_4" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Middle_Wheel_Axle_Connector_Plate_4__c_1_2_hex_bearing_good_real_1" type="fixed">
+    <origin xyz="-0.03852905435 -0.02224477799 -0.000464854054" rpy="0 0 0.9639445296" />
+    <parent link="Middle_Wheel_Axle_Connector_Plate_4" />
+    <child link="c_1_2_hex_bearing_good_real_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="c_1_2_hex_bearing_good_real_1__am_0856_500_Hex_Shaft_for_Modulox_REV3_1" type="fixed">
+    <origin xyz="-1.945594344e-09 2.722914434e-09 -0.02802006751" rpy="0 0 -0.5235987756" />
+    <parent link="c_1_2_hex_bearing_good_real_1" />
+    <child link="am_0856_500_Hex_Shaft_for_Modulox_REV3_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: 1 DOF pure translation; config sets fixed (inference said prismatic) -->
+  </joint>
+  <joint name="c_1_2_hex_bearing_good_real_1__Wheel_2_1_George_2" type="fixed">
+    <origin xyz="5.333889477e-07 1.048030249e-06 -0.05429764494" rpy="1.570796327 0 -1.047197551" />
+    <parent link="c_1_2_hex_bearing_good_real_1" />
+    <child link="Wheel_2_1_George_2" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="am_0856_500_Hex_Shaft_for_Modulox_REV3_1__Wheel_Plate_hex_bearing_1" type="fixed">
+    <origin xyz="-9.028586543e-07 -4.697819667e-07 -0.07468507839" rpy="1.570796327 0 -0.5235987756" />
+    <parent link="am_0856_500_Hex_Shaft_for_Modulox_REV3_1" />
+    <child link="Wheel_Plate_hex_bearing_1" />
+    <axis xyz="0.5 0 -0.8660254" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="am_0856_500_Hex_Shaft_for_Modulox_REV3_1__c_1_2_hex_bearing_good_real_2" type="fixed">
+    <origin xyz="-2.72468144e-09 1.945971447e-09 0.07022477571" rpy="-3.141592653 0 1.570796327" />
+    <parent link="am_0856_500_Hex_Shaft_for_Modulox_REV3_1" />
+    <child link="c_1_2_hex_bearing_good_real_2" />
+    <axis xyz="0 0 1" />
+    <!-- mates: COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: under-constrained (3 DOF) -> fixed; verify -->
+  </joint>
+  <joint name="c_1_2_hex_bearing_good_real_2__Middle_Wheel_Axle_Connector_Plate_3" type="fixed">
+    <origin xyz="0.003699622821 0.04433544242 0.0004648540445" rpy="-3.141592653 0 2.011142081" />
+    <parent link="c_1_2_hex_bearing_good_real_2" />
+    <child link="Middle_Wheel_Axle_Connector_Plate_3" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9" type="fixed">
+    <origin xyz="-0.08861961835 -0.02063761499 0.01652529198" rpy="1.570796327 1.223595446 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7" type="fixed">
+    <origin xyz="-0.07709980621 0.007937504502 -0.007447970586" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6" type="fixed">
+    <origin xyz="-0.03209980621 0.007937504502 0.07049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10" type="fixed">
+    <origin xyz="-0.04944377568 0.02063738501 0.06319036842" rpy="-1.570796327 0.8707996569 -3.141592653" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5" type="fixed">
+    <origin xyz="-0.02513828199 0.007937504502 -0.03744797059" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10" type="fixed">
+    <origin xyz="-0.04944377568 0.02063738501 0.06319036842" rpy="-1.570796327 0.8707996569 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11" type="fixed">
+    <origin xyz="0.01055702072 0.02063738501 0.0631881676" rpy="-1.570796327 -0.1763978943 -3.141592653" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6" type="fixed">
+    <origin xyz="-0.03209980621 0.007937504502 0.07049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9" type="fixed">
+    <origin xyz="-0.08861961835 -0.02063761499 0.01652529198" rpy="1.570796327 1.223595446 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11" type="fixed">
+    <origin xyz="0.01055702072 0.02063738501 0.0631881676" rpy="-1.570796327 -0.1763978943 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7" type="fixed">
+    <origin xyz="-0.07709980621 0.007937504502 -0.007447970586" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5" type="fixed">
+    <origin xyz="-0.02513828199 0.007937504502 -0.03744797059" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Rocker_Connection_Plate_W_LEVER_ARM_2_0_2__Rocker_Bogie_Top_Cover_2" type="fixed">
+    <origin xyz="0.002561632154 0.05939483803 -0.02191477679" rpy="-3.141592653 0 3.076142807" />
+    <parent link="Rocker_Connection_Plate_W_LEVER_ARM_2_0_2" />
+    <child link="Rocker_Bogie_Top_Cover_2" />
+  </joint>
+  <joint name="Bogie_Shaft_2__c_4390N181_Flanged_Ball_Bearing_1_4" type="fixed">
+    <origin xyz="-5.899482852e-07 1.070052394e-07 -0.0263763325" rpy="-3.141592653 0 -0.6912955852" />
+    <parent link="Bogie_Shaft_2" />
+    <child link="c_4390N181_Flanged_Ball_Bearing_1_4" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="c_4390N181_Flanged_Ball_Bearing_1_4__Bogie_Connection_Plate_1_0_3" type="fixed">
+    <origin xyz="-0.0002015318522 -0.004076030871 -0.0002128085388" rpy="0 0 -0.04946568841" />
+    <parent link="c_4390N181_Flanged_Ball_Bearing_1_4" />
+    <child link="Bogie_Connection_Plate_1_0_3" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Bogie_Connection_Plate_1_0_3__Bogie_Arm_6" type="fixed">
+    <origin xyz="0.1335301427 -0.01877430106 -0.02063748994" rpy="1.570796327 0 1.308996939" />
+    <parent link="Bogie_Connection_Plate_1_0_3" />
+    <child link="Bogie_Arm_6" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, CONCENTRIC, COINCIDENT, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Bogie_Arm_6__Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" type="fixed">
+    <origin xyz="-2.723101015e-07 -0.0206375 0.1259710889" rpy="0 1.047197551 0" />
+    <parent link="Bogie_Arm_6" />
+    <child link="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, COINCIDENT, COINCIDENT, COINCIDENT -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (1 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" type="fixed">
+    <origin xyz="-0.04944758762 0.02063738501 -0.04073405944" rpy="1.570796327 0.1763978943 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_1__TG60_G10_STEP_1" type="fixed">
+    <origin xyz="-0.01943126265 -0.03872315632 0.0112267241" rpy="1.571261837 1.570796327 0.0004655105898" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_1__TG60_G10_STEP_1" />
+    <axis xyz="0 0 1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.6mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1__Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" type="fixed">
+    <origin xyz="0.05149263074 0.04517520156 -0.02063761499" rpy="-1.570796327 0 0.1763978943" />
+    <parent link="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_1" />
+    <child link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__TG60_G10_STEP_1__Left_mounted_motor_assembly_1__Planetary_to_motor_mount_1" type="fixed">
+    <origin xyz="-3.545415091e-07 -1.394940486e-05 -0.03828899886" rpy="1.570796327 0 2.617993878" />
+    <parent link="Left_mounted_motor_assembly_1__TG60_G10_STEP_1" />
+    <child link="Left_mounted_motor_assembly_1__Planetary_to_motor_mount_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__TG60_G10_STEP_1__Left_mounted_motor_assembly_1__Wheel_Plate_1" type="fixed">
+    <origin xyz="-4.555796329e-07 -1.224313748e-05 0.07295184366" rpy="-1.570796327 0 0.06998905929" />
+    <parent link="Left_mounted_motor_assembly_1__TG60_G10_STEP_1" />
+    <child link="Left_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1" type="fixed">
+    <origin xyz="0.01986171801 0.007937504502 0.04049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, COINCIDENT, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: free axis but r=2.0mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__Blank_Odrive_S1_1" type="fixed">
+    <origin xyz="-0.02678633317 0.01141665868 0.01556632839" rpy="-1.570796327 0.5235987756 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__Blank_Odrive_S1_1" />
+    <axis xyz="0 0 -1" />
+    <!-- mates: CONCENTRIC, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free rotation about mate axis (2 DOF); config sets fixed (inference said revolute) -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Wheel_Plate_1__Left_mounted_motor_assembly_1__Wheel_Left_1" type="fixed">
+    <origin xyz="1.90355993e-07 0.04879576196 -1.947131955e-06" rpy="-3.137863589 -1.570796327 -0.00372906459" />
+    <parent link="Left_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <child link="Left_mounted_motor_assembly_1__Wheel_Left_1" />
+    <axis xyz="0 -1 0" />
+    <!-- mates: CONCENTRIC, CONCENTRIC, COINCIDENT, CONCENTRIC, CONCENTRIC, COINCIDENT -->
+    <!-- sw2robot-note: geo: fully constrained -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Wheel_Plate_1__Left_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1" type="fixed">
+    <origin xyz="-0.0003738562996 0.005587566415 0.003740784195" rpy="3.141592653 0 3.141592653" />
+    <parent link="Left_mounted_motor_assembly_1__Wheel_Plate_1" />
+    <child link="Left_mounted_motor_assembly_1__Gobilda_14mm_Clamping_Hub_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: free axis but r=2.1mm = fastener, not bearing -> fixed -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Wheel_Left_1__Left_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1" type="fixed">
+    <origin xyz="1.635649169e-07 -0.04802423804 3.960164001e-06" rpy="0 0 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_1__Wheel_Left_1" />
+    <child link="Left_mounted_motor_assembly_1__Inner_Ring_Wheel_Plate_1" />
+    <axis xyz="0 1 0" />
+    <!-- mates: COINCIDENT, CONCENTRIC, COINCIDENT, CONCENTRIC -->
+    <!-- sw2robot-note: geo: only axial slide along a fastener axis -->
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5" type="fixed">
+    <origin xyz="-0.02513828199 0.007937504502 -0.03744797059" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_5" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11" type="fixed">
+    <origin xyz="0.01055702072 0.02063738501 0.0631881676" rpy="-1.570796327 -0.1763978943 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_11" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5" type="fixed">
+    <origin xyz="-0.02513828199 0.007937504502 -0.03744797059" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_5" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6" type="fixed">
+    <origin xyz="-0.03209980621 0.007937504502 0.07049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_6" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7" type="fixed">
+    <origin xyz="-0.07709980621 0.007937504502 -0.007447970586" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__c_0_5in_6_32_Hex_Standoff_7" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1__Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10" type="fixed">
+    <origin xyz="-0.04944377568 0.02063738501 0.06319036842" rpy="-1.570796327 0.8707996569 -3.141592653" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_10" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11" type="fixed">
+    <origin xyz="0.01055702072 0.02063738501 0.0631881676" rpy="-1.570796327 -0.1763978943 -3.141592653" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_11" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1__Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9" type="fixed">
+    <origin xyz="-0.08861961835 -0.02063761499 0.01652529198" rpy="1.570796327 1.223595446 0" />
+    <parent link="Left_mounted_motor_assembly_1__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Left_mounted_motor_assembly_1__c_1_5in_6_32_Threaded_Hex_Standoff_9" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7" type="fixed">
+    <origin xyz="-0.07709980621 0.007937504502 -0.007447970586" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_7" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6" type="fixed">
+    <origin xyz="-0.03209980621 0.007937504502 0.07049431575" rpy="1.570796327 -0.8265451898 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__c_0_5in_6_32_Hex_Standoff_6" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1__Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9" type="fixed">
+    <origin xyz="-0.08861961835 -0.02063761499 0.01652529198" rpy="1.570796327 1.223595446 0" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Midplate_Sheet_netal_1" />
+    <child link="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_9" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1__Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10" type="fixed">
+    <origin xyz="-0.04944377568 0.02063738501 0.06319036842" rpy="-1.570796327 0.8707996569 -3.141592653" />
+    <parent link="Right_mounted_motor_assembly_2__Motor_Enclosure_Lid_Sheet_Metal_1_1" />
+    <child link="Right_mounted_motor_assembly_2__c_1_5in_6_32_Threaded_Hex_Standoff_10" />
+    <axis xyz="0 0 -1" />
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__full_assem_30mm_1__Front_Assem_30mm_1" type="fixed">
+    <origin xyz="-5.702286998e-08 0.172596855 -0.01231642908" rpy="-3.07035367 -6.326794897e-06 -3.141592653" />
+    <parent link="base_link" />
+    <child link="full_assem_30mm_1__Front_Assem_30mm_1" />
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__Rocker_Bogie_Bottom_Cover_2" type="fixed">
+    <origin xyz="-0.3451906834 -0.004857596764 -0.03849455454" rpy="1.57080267 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="Rocker_Bogie_Bottom_Cover_2" />
+  </joint>
+  <joint name="Rocker_Pivot_Thru_Shaft_1__Rocker_Bogie_Bottom_Cover_1" type="fixed">
+    <origin xyz="0.3465293166 -0.004857596774 -0.03849893091" rpy="1.57080267 0.07123898377 1.570796778" />
+    <parent link="base_link" />
+    <child link="Rocker_Bogie_Bottom_Cover_1" />
+  </joint>
+</robot>
