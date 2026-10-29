@@ -26,6 +26,7 @@ setup(
             'console_scripts': [
                 'nav_state_machine = fsm.nav_state_machine:main',
                 'mock_nav_feed = fsm.mock_nav_feed:main',
+                'state_machine_ui = fsm.state_machine_ui:main',
             ],
     },
 )

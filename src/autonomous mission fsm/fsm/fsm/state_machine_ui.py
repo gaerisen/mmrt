@@ -2,6 +2,10 @@ from random import Random
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
+from sensor_msgs.msg import Image
+from cv_bridge import CvBridge     # Tool to convert between ROS and OpenCV images
+import cv2
+import numpy as np
 
 class RoverUI(Node):
     def __init__(self):
@@ -11,6 +15,24 @@ class RoverUI(Node):
         self.distance_from_goal = 100
         self.marker_detection = False
         self.current_state = "INIT"
+        
+        
+
+        self.model = "/workspaces/mmrt/src/autonomous mission fsm/fsm/fsm/face_detection_yunet_2023mar.onnx"
+
+        self.detector = cv2.dnn.readNetFromONNX(self.model)
+        self.detector_output_names = self.detector.getUnconnectedOutLayersNames()
+        self.detector_input_size = 320
+
+        print("Face detector initialized")
+
+        
+        self.camera = cv2.VideoCapture("src/autonomous mission fsm/fsm/fsm/WIN_20261026_11_40_27_Pro.mp4")
+        self.bridge = CvBridge()
+        self.camera_timer = self.create_timer(
+            1.0 / 30.0,
+            self.publish_camera_image
+        )
         
         self.confidence_sub = self.create_subscription(
             Float32,
@@ -37,7 +59,93 @@ class RoverUI(Node):
             'nav_state', 
             self.reported_state,
             10)
+        self.pub_cam = self.create_publisher(
+                    Image, 'camera_image', 10)
+        self.pub_face_detected = self.create_publisher(
+                    Bool, 'face_detected', 10)
 
+        self.pub_face_detected.publish(
+                        Bool(data=bool(True))
+                    )
+    def publish_camera_image(self):
+    
+        success, frame = self.camera.read()
+
+        if not success:
+            self.get_logger().warning("Could not read video frame")
+            return
+
+        input_size = self.detector_input_size
+        frame = cv2.resize(frame, (input_size, input_size))
+
+        blob = cv2.dnn.blobFromImage(
+            frame,
+            scalefactor=1.0,
+            size=(input_size, input_size),
+            mean=(0, 0, 0),
+            swapRB=False,
+            crop=False
+        )
+
+        try:
+            self.detector.setInput(blob)
+            outputs = self.detector.forward(
+                self.detector_output_names
+            )
+
+            out = dict(zip(self.detector_output_names, outputs))
+
+            boxes = []
+            scores = []
+
+            for stride in (8, 16, 32):
+                cls = out[f"cls_{stride}"].reshape(-1)
+                obj = out[f"obj_{stride}"].reshape(-1)
+                bbox = out[f"bbox_{stride}"].reshape(-1, 4)
+
+                confidence = cls * obj
+                feature_width = input_size // stride
+
+                for i in np.where(confidence >= 0.8)[0]:
+                    row = i // feature_width
+                    col = i % feature_width
+
+                    x1 = col * stride - bbox[i, 0] * stride
+                    y1 = row * stride - bbox[i, 1] * stride
+                    x2 = col * stride + bbox[i, 2] * stride
+                    y2 = row * stride + bbox[i, 3] * stride
+
+                    boxes.append([
+                        float(x1),
+                        float(y1),
+                        float(x2 - x1),
+                        float(y2 - y1)
+                    ])
+                    scores.append(float(confidence[i]))
+
+            indices = cv2.dnn.NMSBoxes(
+                boxes, scores, 0.8, 0.3
+            )
+
+            face_detected = indices is not None and len(indices) > 0
+
+            self.publish_face_detected(face_detected)
+
+            ros_image = self.bridge.cv2_to_imgmsg(
+                frame,
+                encoding="bgr8"
+            )
+            self.pub_cam.publish(ros_image)
+
+        except cv2.error as e:
+            self.get_logger().error(f"Face detection failed: {e}")
+
+    def publish_face_detected(self, detected: bool):
+            msg = Bool()
+            msg.data = detected
+            self.pub_face_detected.publish(msg) 
+            print(msg.data)   
+            
     def listener_callback_confidence(self, msg: Float32):
         self.confidence = float(msg.data)
 
@@ -53,62 +161,27 @@ class RoverUI(Node):
     def reported_state(self, msg):
         self.current_state = msg.data
 
-    #In practice, this function should be called in pieces. Just for easierness purposes, I will call it in one function.
-    #The states might end up jittering between each other with each update because of this.
     def found_marker(self):
         self.marker_detection = True
 
-    
+ 
 def main(args=None):
-
     rclpy.init(args=args)
 
-    fsm_sim = RoverSim()
-    
-    rclpy.spin(fsm_sim)
+    ui = RoverUI()
 
-    simloop (fsm_sim)
-    rclpy.shutdown()
+    try:
+        rclpy.spin(ui)
+
+    except KeyboardInterrupt:
+        pass
+
+    finally:
+        ui.destroy_node()
+        rclpy.shutdown()
 
 
-#this simulates what the sensors might be reporting.
-def simloop(fsm_sim):
-    print(fsm_sim.current_state)
-    while True:
-        match fsm_sim.current_state:
-            case "INIT":
-                confidence_slider.value = 0
-                obstacle_importance_slider.value = 0
-                distance_from_goal_slider.value = 0
-            case "NAVAGATING":
-                confidence_slider.value -= confidence_slider.value * (Random.random() * .1)
-                
-                distance_from_goal_slider.value += 1
-            case "OBSTACLE_AVOIDANCE":
-                confidence_slider.value -= confidence_slider.value * (Random.random() * .1)
-                distance_from_goal_slider.value -= .5
+if __name__ == '__main__':
+    main()
 
-            case "SEARCH_FOR_MARKER":
-                if Random.random() >= .95:
-                    fsm_sim.found_marker()
 
-            case "MARKER_DETECTED":
-                print("Marker detected!")
-                break
-
-            case "MISSION_COMPLETE":
-                print("Mission complete!")
-                #idk why it would ever be here but yeah
-                break
-            case "STOP":
-                confidence_slider.value += 5
-                confidence_slider.value += confidence_slider.value * (Random.random() * .1)
-
-            case "FAULT":
-                print("Fault")
-            case _:
-                pass
-
-        confidence_slider.value += (100 - confidence_slider.value) * .1
-
-app.run()

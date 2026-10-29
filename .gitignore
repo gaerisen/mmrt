@@ -6,3 +6,5 @@ log/
 .cache/
 compile_commands.json
 __pycache__/
+face_detection_result.jpg
+src/autonomous mission fsm/fsm/fsm/WIN_20261026_11_40_27_Pro.mp4
