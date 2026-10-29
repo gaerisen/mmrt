@@ -33,7 +33,7 @@ def generate_launch_description():
             launch_arguments={
                 'world_file': worldfile,
                 'use_rviz': 'False',
-                'headless': 'False',
+                'headless': 'True',
                 'do_fake_localization': 'False'
             }.items()
         ),
@@ -64,6 +64,17 @@ def generate_launch_description():
                 'use_sim_time': 'True',
                 'params_file': paramsfile
             }.items()
+        ),
+        Node(
+            package='pointcloud_to_laserscan',
+            executable='pointcloud_to_laserscan_node',
+            remappings=[
+                ('/cloud_in', '/lidar1_points')
+            ],
+            parameters=[{
+                'target_frame': 'base_link',
+                'min_height': 0.1
+            }]
         )
     ])
 

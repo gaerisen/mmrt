@@ -75,5 +75,8 @@
 	<block class="rock_01">
 		<init_pose3d>-2.0 -4 0 0 0 0</init_pose3d>
 	</block>
+	<block class="rock_01">
+		<init_pose3d>-5.0 5 0 0 0 0</init_pose3d>
+	</block>
 
 </mvsim_world>
