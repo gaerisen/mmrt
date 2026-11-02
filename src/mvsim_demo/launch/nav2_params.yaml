@@ -17,7 +17,7 @@ amcl:
     odom_frame_id: "odom"
     robot_model_type: "nav2_amcl::DifferentialMotionModel"
     tf_broadcast: true
-    scan_topic: laser1
+    scan_topic: scan
 
 bt_navigator:
   ros__parameters:
