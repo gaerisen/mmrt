@@ -7,17 +7,10 @@ from cv_bridge import CvBridge     # Tool to convert between ROS and OpenCV imag
 import cv2
 import numpy as np
 
-class RoverUI(Node):
+class RoverVision(Node):
     def __init__(self):
         super().__init__('rover_sim')
-        self.confidence = 0
-        self.obstacle_importance = 0
-        self.distance_from_goal = 100
-        self.marker_detection = False
-        self.current_state = "INIT"
         
-        
-
         self.model = "/workspaces/mmrt/src/autonomous mission fsm/fsm/fsm/face_detection_yunet_2023mar.onnx"
 
         self.detector = cv2.dnn.readNetFromONNX(self.model)
@@ -25,7 +18,6 @@ class RoverUI(Node):
         self.detector_input_size = 320
 
         print("Face detector initialized")
-
         
         self.camera = cv2.VideoCapture("src/autonomous mission fsm/fsm/fsm/WIN_20261026_11_40_27_Pro.mp4")
         self.bridge = CvBridge()
@@ -34,31 +26,7 @@ class RoverUI(Node):
             self.publish_camera_image
         )
         
-        self.confidence_sub = self.create_subscription(
-            Float32,
-            'confidence',
-            self.listener_callback_confidence,
-            10)
-        self.obstacle_importance_sub = self.create_subscription(
-            Float32,
-            'obstacle_importance',
-            self.listener_callback_obstacle_importance,
-            10)
-        self.distance_from_goal_sub = self.create_subscription(
-            Float32,
-            'distance_from_goal',
-            self.listener_callback_distance_from_goal,
-            10)
-        self.marker_detection_sub = self.create_subscription(
-            Bool,
-            'marker_detection',
-            self.listener_callback_marker_detection,
-            10)
-        self.state_sub = self.create_subscription(
-            String,
-            'nav_state', 
-            self.reported_state,
-            10)
+        
         self.pub_cam = self.create_publisher(
                     Image, 'camera_image', 10)
         self.pub_face_detected = self.create_publisher(
@@ -139,45 +107,25 @@ class RoverUI(Node):
 
         except cv2.error as e:
             self.get_logger().error(f"Face detection failed: {e}")
-
     def publish_face_detected(self, detected: bool):
             msg = Bool()
             msg.data = detected
             self.pub_face_detected.publish(msg) 
             print(msg.data)   
             
-    def listener_callback_confidence(self, msg: Float32):
-        self.confidence = float(msg.data)
-
-    def listener_callback_obstacle_importance(self, msg: Float32):
-        self.obstacle_importance = float(msg.data)
-
-    def listener_callback_distance_from_goal(self, msg: Float32):
-        self.distance_from_goal = float(msg.data)
-
-    def listener_callback_marker_detection(self, msg: Bool):
-        self.marker_detection = bool(msg.data)
-
-    def reported_state(self, msg):
-        self.current_state = msg.data
-
-    def found_marker(self):
-        self.marker_detection = True
-
  
 def main(args=None):
     rclpy.init(args=args)
-
-    ui = RoverUI()
+    vision = RoverVision()
 
     try:
-        rclpy.spin(ui)
+        rclpy.spin(vision)
 
     except KeyboardInterrupt:
         pass
 
     finally:
-        ui.destroy_node()
+        vision.destroy_node()
         rclpy.shutdown()
 
 
