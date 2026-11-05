@@ -1,4 +1,4 @@
-from yolozone import PoseDetector
+# from yolozone import PoseDetector
 from enum import Enum
 import cv2
 

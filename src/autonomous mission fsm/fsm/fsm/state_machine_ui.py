@@ -1,129 +1,60 @@
-from random import Random
 import rclpy
 from rclpy.node import Node
 from std_msgs.msg import String, Float32, Bool
 from sensor_msgs.msg import Image
 from cv_bridge import CvBridge     # Tool to convert between ROS and OpenCV images
+from yolozone import PoseDetector
 import cv2
-import numpy as np
+from . import command_detector as CommandDetector
 
 class RoverVision(Node):
     def __init__(self):
         super().__init__('rover_sim')
-        
-        self.model = "/workspaces/mmrt/src/autonomous mission fsm/fsm/fsm/face_detection_yunet_2023mar.onnx"
 
-        self.detector = cv2.dnn.readNetFromONNX(self.model)
-        self.detector_output_names = self.detector.getUnconnectedOutLayersNames()
-        self.detector_input_size = 320
-
-        print("Face detector initialized")
-        
-        self.camera = cv2.VideoCapture("src/autonomous mission fsm/fsm/fsm/WIN_20261026_11_40_27_Pro.mp4")
+        self.camera = cv2.VideoCapture(0) # this is the default camera on the device
+        self.detector = PoseDetector(model='yolov8n-pose.pt') # TODO: research what model to use
         self.bridge = CvBridge()
-        self.camera_timer = self.create_timer(
-            1.0 / 30.0,
-            self.publish_camera_image
-        )
-        
-        
-        self.pub_cam = self.create_publisher(
-                    Image, 'camera_image', 10)
-        self.pub_face_detected = self.create_publisher(
-                    Bool, 'face_detected', 10)
 
-        self.pub_face_detected.publish(
-                        Bool(data=bool(True))
-                    )
-    def publish_camera_image(self):
-    
-        success, frame = self.camera.read()
+        self.publish_frame = self.create_publisher(Image, 'camera_frame', 10)
+        self.publish_human_detected = self.create_publisher(Bool, 'human_detected', 10)
+        self.publish_command = self.create_publisher(String, 'command', 10)
 
-        if not success:
-            self.get_logger().warning("Could not read video frame")
+        self.camera_timer = self.create_timer(1.0 / 10.0, self.process_frame)
+
+    def process_frame(self): # I am assuming this is like a while loop but idk
+        got_frame, frame = self.camera.read()
+        if not got_frame:
+            self.get_logger().warning("Could not read camera frame", throttle_duration_sec=5.0)
             return
 
-        input_size = self.detector_input_size
-        frame = cv2.resize(frame, (input_size, input_size))
+        keypoints = self.detector.find_keypoints(frame)
+        human_detected = keypoints is not None and keypoints.xy.shape[0] > 0
+        self.publish_human_detected.publish(Bool(data=human_detected))
 
-        blob = cv2.dnn.blobFromImage(
-            frame,
-            scalefactor=1.0,
-            size=(input_size, input_size),
-            mean=(0, 0, 0),
-            swapRB=False,
-            crop=False
-        )
+        if human_detected:
+            measurements = CommandDetector.get_measurements(self.detector, keypoints)
+            command = CommandDetector.detect_command(measurements)
+            color = CommandDetector.COLORS.get(command, CommandDetector.DEFAULT_COLOR)
+            frame = CommandDetector.draw_skeleton(self.detector, keypoints, frame, color)
 
-        try:
-            self.detector.setInput(blob)
-            outputs = self.detector.forward(
-                self.detector_output_names
-            )
-
-            out = dict(zip(self.detector_output_names, outputs))
-
-            boxes = []
-            scores = []
-
-            for stride in (8, 16, 32):
-                cls = out[f"cls_{stride}"].reshape(-1)
-                obj = out[f"obj_{stride}"].reshape(-1)
-                bbox = out[f"bbox_{stride}"].reshape(-1, 4)
-
-                confidence = cls * obj
-                feature_width = input_size // stride
-
-                for i in np.where(confidence >= 0.8)[0]:
-                    row = i // feature_width
-                    col = i % feature_width
-
-                    x1 = col * stride - bbox[i, 0] * stride
-                    y1 = row * stride - bbox[i, 1] * stride
-                    x2 = col * stride + bbox[i, 2] * stride
-                    y2 = row * stride + bbox[i, 3] * stride
-
-                    boxes.append([
-                        float(x1),
-                        float(y1),
-                        float(x2 - x1),
-                        float(y2 - y1)
-                    ])
-                    scores.append(float(confidence[i]))
-
-            indices = cv2.dnn.NMSBoxes(
-                boxes, scores, 0.8, 0.3
-            )
-
-            face_detected = indices is not None and len(indices) > 0
-
-            self.publish_face_detected(face_detected)
-
-            ros_image = self.bridge.cv2_to_imgmsg(
-                frame,
-                encoding="bgr8"
-            )
-            self.pub_cam.publish(ros_image)
-
-        except cv2.error as e:
-            self.get_logger().error(f"Face detection failed: {e}")
-    def publish_face_detected(self, detected: bool):
-            msg = Bool()
-            msg.data = detected
-            self.pub_face_detected.publish(msg) 
-            print(msg.data)   
-            
+            if command is not None:
+                self.publish_command.publish(String(data=command.value))
  
+        self.publish_frame.publish(self.bridge.cv2_to_imgmsg(frame, encoding="bgr8"))
+
+    def destroy_node(self):
+        self.camera.release()
+        super().destroy_node()
+
+
 def main(args=None):
     rclpy.init(args=args)
     vision = RoverVision()
 
     try:
         rclpy.spin(vision)
-
     except KeyboardInterrupt:
         pass
-
     finally:
         vision.destroy_node()
         rclpy.shutdown()
@@ -131,5 +62,3 @@ def main(args=None):
 
 if __name__ == '__main__':
     main()
-
-
